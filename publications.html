@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light'
+        rel='stylesheet' type='text/css'>
+    <title>Gravenkamp publications</title>
+    <script src="bibtex-js/bibtex_js.js"></script>
+
+</head>
+
+<bibtex src="_myPublications.bib"></bibtex>
+
+
+<body>
+
+    <div class="wrapper clearfix">
+        <div class="left">
+            <div class="name-hero">
+                <img class="profilePic" src="photo.png" alt="Profile Picture">
+                <div class="name-text">
+                    <h1>Dr. Hauke Gravenkamp</h1>
+                    <h2>Computational Engineer</h2>
+                    <p><i class="fas fa-envelope"></i> <a
+                            href="mailto:gravenkamp.research@gmail.com">gravenkamp.research@gmail.com</a><br>
+                        <i class="fas fa-map-marker-alt"></i> Barcelona, Spain
+                    </p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/gravenkamp/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://scholar.google.com.au/citations?user=zXsnYv8AAAAJ&hl=en" target="_blank">
+                            <i class="fa-brands fa-google fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://www.researchgate.net/profile/Hauke-Gravenkamp" target="_blank">
+                            <i class="fa-brands fa-researchgate fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://github.com/haukegravenkamp" target="_blank">
+                            <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <a href="index.html"><li>CV</li></a>
+                        <a href="publications.html"> <li>Publications</li></a>
+                    </ul>
+                </nav>
+
+
+                <div class="bibtex_structure">
+                    <div class="sections bibtextypekey">
+                        <div class="section article">
+                            <h2>Peer-reviewed journal papers</h2>
+                            <div class="sort date" extra="DESC number">
+                                <div class="templates"></div>
+                            </div>
+                        </div>
+                        <div class="section inproceedings">
+                            <h2>Conference papers</h2>
+                            <div class="sort date" extra="DESC number">
+                                <div class="templates"></div>
+                            </div>
+                        </div>
+                        <div class="section unpublished">
+                            <h2>Selected talks</h2>
+                            <div class="sort date" extra="DESC number">
+                                <div class="templates"></div>
+                            </div>
+                        </div>
+                        <div class="section report">
+                            <h2>Posters</h2>
+                            <div class="sort date" extra="DESC number">
+                                <div class="templates"></div>
+                            </div>
+                        </div>
+                        <div class="section thesis">
+                            <h2>Theses</h2>
+                            <div class="sort date" extra="DESC number">
+                                <div class="templates"></div>
+                            </div>
+                        </div>
+                        <div class="section software">
+                            <h2>Software</h2>
+                            <div class="sort date" extra="DESC number">
+                                <div class="templates"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="bibtex_display">
+                    <div class="bibtex_template">
+                            <span class="author"></span>,
+                            <span class="title"></span>,
+                            <span class="journaltitle" style="font-style: italic"></span>
+                            <span class="booktitle" style="font-style: italic"></span>
+                            <span class="venue"  style="font-style: italic"></span><div class="if type">
+                                <span class="type"></span>,
+                           </div>
+                            <span class="institution"></span>
+                            <span class="volume"></span>
+                            (<span class="date" style="margin-bottom: 20px"></span>)<div class="if doi">, doi:<span class="doi"></span></div><div class="if BIBTEXTYPEKEY==SOFTWARE">, <span class="url"></span>
+                            </div>
+                            <br>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,76 +1,127 @@
-<html></html>
-	<head>
-		<link href="style.css" rel="stylesheet">
-		<title>Your name resume</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	</head>
+<!DOCTYPE html>
+<html lang="en">
 
-	<body>
-		<header id="header">
-			<!-- resume header with your name and title -->
-			<h1>Dr. Hauke Gravenkamp</h1>
-			<hr>
-			YOUR TITLE
-			<hr>
-		</header>
-		<main>
-			<article id="mainLeft">
-				<section>
-					<h2>CONTACT</h2>
-					<!-- contact info including social media -->
-                    <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:your-email@example.com">your-email@example.com</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="github.com/gh-username">gh-username</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="linkedin.com/linkedin-username">linkedin-username</a>
-                    </p>
-				</section>
-				<section>
-					<h2>SKILLS</h2>
-					<!-- your skills -->
-                    <p>HTML, CSS, GitHub, VS Code...</p>
-				</section>
-				<section>
-					<h2>EDUCATION</h2>
-					<!-- your education -->
-                    <h3>YOUR MAJOR</h3>
-                    <p>
-                        Your university or school
-                    </p>
-                    <p>
-                        2018-2022
-                    </p>
-				</section>            
-			</article>
-			<article id="mainRight">
-				<section>
-					<h2>ABOUT</h2>
-					<!-- about you -->
-					<p>A brief paragraph about you and what kind of company you want to work for.</p>
-				</section>
-				<section>
-					<h2>WORK EXPERIENCE</h2>
-					<!-- your work experience -->
-                    <h3>JOB TITLE</h3>
-                    <p>
-                            Company Name | 2008 - 2010
-                    </p>
-                    <p>
-                            Describe what you did in this position with one summary sentence and no more than 3 bullet points with specific highlights
-                    </p>
-                    <ul>
-                            <li>Cool accomplishment</li>
-                            <li>Cool accomplishment</li>
-                            <li>Cool accomplishment</li>
-                    </ul>
-				</section>
-			</article>
-		</main>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light'
+    rel='stylesheet' type='text/css'>
+  <title>Gravenkamp CV</title>
+  <script src="bibtex-js/bibtex_js.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper clearfix">
+    <div class="left">
+      <div class="name-hero">
+        <img class="profilePic" src="photo.png" alt="Profile Picture">
+        <div class="name-text">
+          <h1>Dr. Hauke Gravenkamp</h1>
+          <h2>Computational Engineer</h2>
+          <p><i class="fas fa-envelope"></i> <a
+              href="mailto:gravenkamp.research@gmail.com">gravenkamp.research@gmail.com</a><br>
+            <i class="fas fa-map-marker-alt"></i> Barcelona, Spain
+          </p>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/gravenkamp/" target="_blank">
+              <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i></a>
+            <a href="https://scholar.google.com.au/citations?user=zXsnYv8AAAAJ&hl=en" target="_blank">
+              <i class="fa-brands fa-google fa-lg" aria-hidden="true"></i></a>
+            <a href="https://www.researchgate.net/profile/Hauke-Gravenkamp" target="_blank">
+              <i class="fa-brands fa-researchgate fa-lg" aria-hidden="true"></i></a>
+            <a href="https://github.com/haukegravenkamp" target="_blank">
+              <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <div class="inner">
+        <nav>
+          <ul>
+              <a href="index.html"><li>CV</li></a>
+              <a href="publications.html"> <li>Publications</li></a>
+          </ul>
+      </nav>
+        <section>
+          <h1>Work Experience</h1>
+          <p> <em> 04/2021 - 04/2024 | CIMNE Barcelona | Computational Engineer</em></p>
+          <p> Developed CFD algorithms for the numerical modeling of multiphase problems. Paricipated in international
+            collaborations related to inverse problems, material characterization, ultrasound and automotive parts.
+            Supervised PhD students. </p>
+          <p> <em>11/2015 - 03/2021 | University of Duisburg-Essen | Researcher/Lecturer</em></p>
+          <p> Developed finite element software for structural analyses, fracture modeling and dynamics. Conducted
+            research on innovative discretization schemes and wave
+            propagation problems. Taught courses in Civil Engineering and Computational Mechanics. Supervised PhD and
+            Masters students.</p>
+          <p> <em>02/2010 - 10/2015 | BAM Berlin | Researcher</em></p>
+          <p> Conducted research on numerical methods for ultrasound simulation. Developed international collaborations.
+          </p>
+          <p> <em>04/2009 - 01/2010 | IfU Hamburg | Accident Forensics Expert</em></p>
+          <p> Conducted forensic analyses of traffic accidents, providing detailed reports for judicial proceedings.</p>
+          <p> <em>02/2007 - 02/2009 | University of Hamburg | Student Assistant</em></p>
+          <p> Conducted experiments in a Laser Physics / Quantum Optics laboratory. Operated equipment for taking air
+            samples.</p>
+          <p> <em> 11/2002 - 01/2008 | Youth Center Atrium Norderstedt | Support Staff</em></p>
+          <p> Provided after-school care and assisted students with homework and academic tasks.</p>
+        </section>
+        <section>
+          <h1>Education</h1>
+          <p> <em> 07/2021 | University of Duisburg-Essen | Habiliation</em></p>
+          <p> Dr. habil., Civil Engineering Department, Engineering Mechanics <br>
+            Thesis: "Semi-analytical approaches to the simulation of wave propagation phenomena in large and unbounded
+            domains"</p>
+          <p> <em>04/2014 | TU Braunschweig | Doctorate</em></p>
+          <p> Dr. rer. nat., Computational Mechanics, distinction: summa cum laude<br>
+            Thesis: "Numerical methods for the simulation of ultrasonic guided waves"</p>
+          <p> <em> 01/2009 | University of Hamburg | Physics Diploma</em></p>
+          <p> Dipl.-Phys., final grade: excellent
+            <br>
+            Thesis: "Acousto-optic modulators, magnetic fields and polarization measurements for atom trap trace analysis of krypton isotopes"</p>
+        </section>
+        </section>
+        <h1>International Experience</h1>
+        <p> <em> 02/2019 - 03/2019 | University of New South Wales Sydney | Visiting Senior Lecturer</em></p>
+        <p> <em> 02/2016 - 03/2016 | University of New South Wales Sydney | Visiting Senior Lecturer</em></p>
+        <p> <em> 10/2013 - 11/2013 | University of New South Wales Sydney | Visiting Researcher</em></p>
+        <p> <em> 09/2012 - 02/2013 | University of New South Wales Sydney | Visiting Researcher</em></p>
+        <p> <em> 04/2011 - 07/2011 | University of New South Wales Sydney | Visiting Researcher</em></p>
+
+        <p> <em> 08/2018 - 09/2018 | Massachusetts Institute of Technology Cambridge | Visiting Researcher</em></p>
+        <p> <em> 03/2015 - 04/2015 | Indian Institute of Technology Chennai | Visiting Researcher</em></p>
+        <p> <em> 03/2009 - 04/2009 | MOWA Engineering Otjiwarongo | Intern</em></p>
+
+        </p>
+        </section>
+        <section>
+          <h1>Technical Skills</h1>
+          <ul class="skill-set">
+            <li>Matlab</li>
+            <li>Julia</li>
+            <li>Python</li>
+            <li>Fortran</li>
+            <li>LaTex</li>
+            <li>FEM</li>
+            <li>CFD</li>
+            <li>Computational Mechanics</li>
+            <li>Structural Analysis</li>
+            <li>Scientific Writing</li>
+            <li>Project Management</li>
+          </ul>
+        </section>
+        <section>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
