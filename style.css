@@ -78,19 +78,19 @@ h1 {
     width: 66.66%;
     height: 100vh;
     position: relative;
-    top: 0;
+    top: 30px;
 }
 
 
 .name-hero {
     background: rgba(0, 0, 0, .001);
     bottom: 0;
-    height: 290px;
+    top: 0;
     left: 0;
+    right: 0;
+    height: 290px;
     margin: auto;
     position: absolute;
-    right: 0;
-    top: 0;
     width: 85%;
 }
 
@@ -106,12 +106,11 @@ h1 {
 }
 
 .name-hero i {
-    margin-right: 0.2em;
+    margin-right: 0.em;
     color: rgb(100, 100, 100);
 }
 
 .name-hero h1 {
-    /* font-family: Open Sans, sans-serif; */
     font-size: 1.4em;
     text-align: center;
 }
@@ -198,7 +197,6 @@ h1 {
     color: white;
     background:  #333333; /* GitHub gray */
 }
-
 
 .name-hero .name-text {
     margin: 0 auto;
@@ -326,6 +324,19 @@ ul {
     margin-bottom: 20px;
 }
 
+.left nav {
+    background: rgba(0, 0, 0, .0);
+    padding: 15px;
+    font-size: 1.2em;
+    position: relative;
+    top: 0;
+    left: 0%;
+    z-index: 1000;
+    text-align: center;
+    /* width: fit-content; */
+    margin-bottom: 20px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -335,7 +346,7 @@ nav ul {
 
 nav ul a {
     text-decoration: none;
-    margin-right: 120px;
+    margin-right: 40px;
 }
 
 nav ul li {
@@ -359,16 +370,20 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-
-body {
-    padding-top: 60px;
-}
+/* body { */
+    /* padding-top: 60px; */
+/* } */
 
 @media screen and (max-width: 48em) {
 
-    .right,
     .left {
         float: none;
+        position: relative !important;
+        width: 100%;
+        min-height: 500px;
+    }
+    .right {
+        float: inline-end;
         position: relative !important;
         width: 100%;
         min-height: 500px;
