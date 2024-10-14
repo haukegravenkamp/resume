@@ -363,8 +363,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-
-
 /* Dropdown menu */
 nav ul li .dropdown {
     display: none; /* Hide the dropdown by default */
@@ -400,22 +398,6 @@ nav ul li .dropdown li a {
     color: white; /* White text for dropdown links */
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 48em) {
 
