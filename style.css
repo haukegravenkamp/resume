@@ -370,11 +370,15 @@ nav ul li .dropdown {
     display: none; /* Hide the dropdown by default */
     position: absolute;
     top: 100%; /* Position below the parent <li> */
-    left: 0;
+    /* left: 100%; */
+    right: 0; /* Align dropdown to the right of the parent */
     min-width: 0px;
-    padding: 0;
+    padding: 0px 0;
     border-radius: 5px;
-    color: white;
+    /* color: white; */
+    font-size: 0.75em;
+    /* text-align: right !important; */
+    /* background: rgba(0, 0, 0, .05); */
 }
 
 nav ul li:hover .dropdown {
@@ -383,7 +387,7 @@ nav ul li:hover .dropdown {
 
 nav ul li .dropdown li {
     display: block; /* Make dropdown items block-level */
-    padding: 10px 15px;
+    padding: 2px 6px;
     margin: 0;
     color: white;
 }
