@@ -244,6 +244,16 @@ h1 {
     font-size: 1.1em;
 }
 
+.inner p em a{
+    text-decoration: none;
+    color: black;
+}
+
+.inner p em a:hover {
+    color: #3498db;
+    font-weight: bold;
+}
+
 .inner p:has(em) {
     margin-top: 30px; /* Ensure there is space above <p><em> */
 }
