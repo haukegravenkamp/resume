@@ -53,7 +53,7 @@ body {
     text-align: justify;
     margin: 0 0 0px 0;
     height: 100%;
-    padding-bottom: 500px; 
+    padding-bottom: 500px;
 }
 
 h1 {
@@ -138,13 +138,13 @@ h1 {
 }
 
 .icons i {
-    color: black; 
+    color: black;
     font-size: 1.5em;
 }
 
 .icons i:hover {
-    color: #0077b5; 
-} 
+    color: #0077b5;
+}
 
 .icons a .fa-linkedin {
     color: rgb(90, 90, 90);
@@ -169,28 +169,32 @@ h1 {
 }
 
 .icons a {
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 .icons a:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .icons a .fa-linkedin:hover {
-    color: #0077b5; /* LinkedIn blue */
+    color: #0077b5;
+    /* LinkedIn blue */
 }
 
 .icons a .fa-google:hover {
-    color: #db4437; /* Google red */
+    color: #db4437;
+    /* Google red */
 }
 
 .icons a .fa-researchgate:hover {
-    color: #00ccbb; /* ResearchGate teal */
+    color: #00ccbb;
+    /* ResearchGate teal */
 }
 
 .icons a .fa-github:hover {
     color: white;
-    background:  #333333; /* GitHub gray */
+    background: #333333;
+    /* GitHub gray */
 }
 
 .name-hero .name-text {
@@ -213,7 +217,7 @@ h1 {
     max-width: 975px;
     padding: 2em;
     margin-top: -1em;
-    margin-bottom: 350px ;
+    margin-bottom: 350px;
 }
 
 .inner h1 {
@@ -237,7 +241,7 @@ h1 {
     font-size: 1.1em;
 }
 
-.inner p em a{
+.inner p em a {
     text-decoration: none;
     color: black;
 }
@@ -248,7 +252,8 @@ h1 {
 }
 
 .inner p:has(em) {
-    margin-top: 30px; /* Ensure there is space above <p><em> */
+    margin-top: 30px;
+    /* Ensure there is space above <p><em> */
 }
 
 .inner section {
@@ -342,7 +347,8 @@ nav ul a {
 
 nav ul li {
     display: inline-block;
-    position: relative; /* For the dropdown positioning */
+    position: relative;
+    /* For the dropdown positioning */
     background: rgb(90, 90, 90);
     padding: 3px 12px;
     border-radius: 5px;
@@ -352,7 +358,7 @@ nav ul li {
 
 
 nav ul a:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 nav ul li:hover {
@@ -365,26 +371,30 @@ nav ul li a:hover {
 
 /* Dropdown menu */
 nav ul li .dropdown {
-    display: none; 
+    display: none;
     position: absolute;
     top: 100%;
-    left: 50%; /* Start positioning from the center */
-    transform: translateX(-50%); /* Center the dropdown horizontally */
+    left: 50%;
+    /* Start positioning from the center */
+    transform: translateX(-50%);
+    /* Center the dropdown horizontally */
     padding: 0px 0;
     border-radius: 0px;
     font-size: 0.75em;
-    z-index: 999; /* Ensure it appears above other content */
-    white-space: nowrap; /* Prevent line breaks */
+    z-index: 999;
+    /* Ensure it appears above other content */
+    white-space: nowrap;
+    /* Prevent line breaks */
 }
 
 nav ul li:hover .dropdown {
-    display: block; 
+    display: block;
     border-radius: 0px;
 }
 
 nav ul li .dropdown li {
-    
-    display: block; 
+
+    display: block;
     padding: 2px 6px;
     margin: 0;
     color: black;
@@ -393,13 +403,13 @@ nav ul li .dropdown li {
 }
 
 nav ul li .dropdown li:hover {
-    background-color: #3498db; 
+    background-color: #3498db;
     border-radius: 0px;
 }
 
 nav ul li .dropdown li a {
     display: block;
-    color: black; 
+    color: black;
     text-decoration: none;
     border-radius: 0px;
 }
@@ -412,6 +422,7 @@ nav ul li .dropdown li a {
         width: 100%;
         min-height: 500px;
     }
+
     .right {
         float: inline-end;
         position: relative !important;
@@ -438,5 +449,83 @@ nav ul li .dropdown li a {
 }
 
 @media print {
-    .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+    .pagebreak {
+        page-break-before: always;
+    }
+
+    .left {
+        background-color: rgba(0, 0, 0, .03);
+        border-right: none;
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        top: 0;
+    }
+
+    .right {
+        width: auto;
+        height: 25%;
+        position: absolute;
+        top: 25%;
+
+        float: none; 
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+
+    .inner {
+        margin: 0 0;
+        max-width: auto;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .name-hero {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: row;
+    }
+
+    .profilePic {
+        max-width: 180px; /* Control the image size */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 20px; /* Add space between the image and the text */
+        margin-left: 20px;
+    }
+
+    .name-text {
+        flex: 1; /* Allow the text to take up remaining space */
+        text-align: center; /* Center the text within its box */
+    }
+
+    /* Ensure that sections break across pages */
+    section {
+        page-break-inside: avoid; /* Prevent sections from being cut off mid-page */
+        /* page-break-after: always; */
+    }
+
+    /* Handle long content by allowing page breaks inside elements */
+    p, h1, h2, h3, ul, li {
+        page-break-inside: avoid; /* Try to avoid breaking inside individual elements */
+    }
+    
+    /* Adjust margins for better print layout */
+    body {
+        margin: 0;
+        padding: 0cm; /* Adjust the margin for printing */
+        font-size: 14px;
+        -webkit-print-color-adjust: exact;
+        -moz-print-color-adjust: exact;
+        -ms-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .publication-entry {
+        page-break-inside: avoid; /* Modern browsers */
+        break-inside: avoid;      /* For better browser support */
+    }
+
 }
+

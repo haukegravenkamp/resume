@@ -857,7 +857,6 @@ function BibtexDisplay() {
             }
         } else {
             // Initialize a counter variable
-            // var publicationNumber = 1;
 
             for (var entryKey in entries) {
                 var entry = entries[entryKey];
