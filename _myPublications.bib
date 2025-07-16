@@ -25,7 +25,8 @@
   publisher = {Elsevier Ltd},
   issn = {02677261},
   doi = {10.1016/j.soildyn.2018.07.044},
-  url = {https://doi.org/10.1016/j.soildyn.2018.07.044}
+  url = {https://doi.org/10.1016/j.soildyn.2018.07.044},
+  abstract = {A strategy for dynamic soil-structure interaction problems involving three-dimensional layered soil is proposed. It is based on coupling an axisymmetric formulation for the regular layered far field region with a general threedimensional finite element model of the near field via a cylindrical near field / far field interface. Using a virtual work statement, an axisymmetric scaled boundary finite element method (SBFEM) for the elastodynamic analysis of 3D layered continua is derived. Here, a vertical line, which is rotated around the origin of the cylindrical coordinate system is discretized in the finite element sense. A nonlinear differential equation in dynamic stiffness is obtained for each term of the Fourier series describing the circumferential variation of displacements in the far field, which must be solved numerically for each frequency of interest. While this leads to considerable savings in numerical cost compared to the effort associated with calculating a fully coupled stiffness matrix for the 3D problem, the numerical efficiency can be further increased by re-casting the problem using the method of weighted residuals. In doing so, a link with the well-known thin-layer method is established. The latter leads to a standard eigenvalue problem for the calculation of wave numbers and modes. The axisymmetric stiffness formulation obtained using one of the two aforementioned techniques is coupled with the 3D finite element model of the near field via the dynamic stiffness matrix relating nodal forces to nodal displacements at the cylindrical interface. Following a physically motivated approach, individual columns of the latter are obtained by considering situations where a unit displacement is assumed for the corresponding degree of freedom and zero displacements elsewhere and by expanding the corresponding displacement field into a Fourier series. The proposed strategy is applied to various soil-structure interaction problems involving flexible foundations of irregular shape resting on layered ground over rigid bedrock.}
 }
 
 @article{Assaf2022,
@@ -36,7 +37,8 @@
   shortjournal = {Comput. Methods Appl. Mech. Eng.},
   volume = {399},
   pages = {115364},
-  doi = {10.1016/j.cma.2022.115364}
+  doi = {10.1016/j.cma.2022.115364},
+  abstract = {In this paper, an adaptive phase-field approach is proposed for three-dimensional fracture modeling in brittle materials. The scaled boundary finite element method (SBFEM) is used to solve the phase-field and elasticity equations in a staggered scheme. This is motivated by the ability of the SBFEM to handle polyhedral elements with hanging nodes straightforwardly. Such elements occur in octree meshes, which facilitate rapid transitions in element size and lend themselves to adaptive refinement. The SBFEM also provides an energy-based error indicator, which follows directly from the semi-analytical solution approach and does not require stress recovery. The error indicator is used to ensure the solution accuracy for both fields and combined with a criterion based on phase-field evolution. The computational cost associated with 3D fracture modeling is further reduced by exploiting the geometric similarity of cells occurring in balanced octree meshes. To validate the proposed method, several classical benchmark problems are solved, resulting in efficient and robust solutions compared to the literature.}
 }
 
 @article{Bause2014,
@@ -51,7 +53,8 @@
   publisher = {IOP Publishing},
   issn = {0957-0233},
   doi = {10.1088/0957-0233/26/9/095602},
-  url = {http://stacks.iop.org/0957-0233/26/i=9/a=095602?key=crossref.7ad31ee2a26d831906226026847e8a2b}
+  url = {http://stacks.iop.org/0957-0233/26/i=9/a=095602?key=crossref.7ad31ee2a26d831906226026847e8a2b},
+  abstract = {In this contribution, we present an efficient approach for the transient and time-causal modeling of guided waves in viscoelastic cylindrical waveguides in the context of ultrasonic material characterization. We use the scaled boundary finite element method (SBFEM) for efficient computation of the phase velocity dispersion. Regarding the viscoelastic behavior of the materials under consideration, we propose a decomposition approach that considers the real-valued frequency dependence of the (visco-)elastic moduli and, separately, of their attenuation. The modal expansion approach is utilized to take the transmitting and receiving transducers into account and to propagate the excited waveguide modes through a waveguide of finite length. The effectiveness of the proposed simulation model is shown by comparison with a standard transient FEM simulation as well as simulation results based on the exact solution of the complex-valued viscoelastic guided wave problem. Two material models are discussed, namely the fractional Zener model and the anti-Zener model; we re-interpret the latter in terms of the Rayleigh damping model. Measurements are taken on a polypropylene sample and the proposed transient simulation model is used for inverse material characterization. The extracted material properties may then be used in computer-aided design of ultrasonic systems.}
 }
 
 @inproceedings{Bause2014a,
@@ -89,7 +92,8 @@
   pages = {105601},
   issn = {0957-0233},
   doi = {10.1088/0957-0233/27/10/105601},
-  url = {http://stacks.iop.org/0957-0233/27/i=10/a=105601?key=crossref.6775e7f6ede6083d9cf85145db920fde}
+  url = {http://stacks.iop.org/0957-0233/27/i=10/a=105601?key=crossref.6775e7f6ede6083d9cf85145db920fde},
+  abstract = {For the numerical simulation of acoustic wave propagation in (measurement) systems and their design, the use of reliable material models and material parameters is a central issue. Especially in polymers, acoustic material parameters cannot be evaluated based on quasistatically measured parameters, as are specified in data sheets by the manufacturers. In this work, a measurement method is presented which quantifies, for a given polymeric material sample, a complex-valued and frequency-dependent material model. A novel threedimensional approach for modeling viscoelasticity is introduced. The material samples are designed as hollow cylindrical waveguides to account for the high damping characteristics of the polymers under test and to provide an axisymmetric structure for good performance of waveguide modeling and reproducible coupling conditions arising from the smaller coupling area in the experiment. Ultrasonic transmission measurements are carried out between the parallel faces of the sample. To account for the frequency dependency of the material properties, five different transducer pairs with ascending central frequency from ~ 750 kHz to ~ 2.5 MHz are used. After passing through the sample, each of the five received signals contains information on the material parameters which are determined in an inverse procedure. The solution of the inverse problem is carried out by iterative comparison of an innovative forward SBFEM-based simulations of the entire measurement system with the experimentally determined measurement data. For a given solution of the inverse problem, an estimate of the measurement uncertainty of each identified material parameter is calculated. Moreover, a second measurement setup, based on laser-acoustic excitation of Lamb modes in plate-shaped specimens, is presented. Using this setup, the identified material properties can be verified on samples with a varied geometry, but made from the same material.}
 }
 
 @inproceedings{Birk2017,
@@ -116,7 +120,8 @@
   date = {2024},
   journaltitle = {Computational Mechanics},
   shortjournal = {Comput. Mech.},
-  doi = {10.1007/s00466-024-02529-6}
+  doi = {10.1007/s00466-024-02529-6},
+  abstract = {This paper addresses the numerical modeling of brittle fracture using a phase field approach. We propose solving the coupled phase field / displacement problem by employing the scaled boundary finite element method, which facilitates the use of hierarchical meshes. An adaptive meshing approach based on this method is summarized. Contrary to existing applications of the scaled boundary finite element method in the context of phase field modeling, scaled boundary shape functions are employed in both staggered and monolithic solution schemes. The proposed methodology is verified considering twodimensional benchmark problems. Very good agreement with finite element results of the force-displacement curves and crack paths is observed regardless of the solution scheme or meshing strategy.}
 }
 
 @article{Bulling2018,
@@ -130,7 +135,8 @@
   publisher = {Elsevier B.V.},
   issn = {0045-7825},
   doi = {10.1016/j.cma.2019.06.025},
-  url = {https://doi.org/10.1016/j.cma.2019.06.025}
+  url = {https://doi.org/10.1016/j.cma.2019.06.025},
+  abstract = {This paper presents an approach to the automatic enrichment of finite elements in the vicinity of a stress singularity. The enrichment consists of semi-analytical singular modes constructed using the Scaled Boundary Finite Element Method (SBFEM). In contrast to analytical methods, the SBFEM provides modes for inhomogeneous and anisotropic materials without additional effort. The finite element basis can be of arbitrary order and remains unaltered by the enrichment. The approach requires enrichment in only one layer of elements around a node. Due to the compatibility of SBFEM with FEM, there is no need for transitional elements, and there are no parasitic terms. The approach is tested for several benchmark problems. The stress intensity factors are computed based on techniques inspired by the SBFEM. The proposed procedure is compared to a standard finite element implementation and shows a significant improvement in the error of the displacement field for problems involving singular stresses.}
 }
 
 @inproceedings{Bulling2019,
@@ -151,12 +157,22 @@
   issue = {January}
 }
 
-@article{Dreiling,
-  title = {Increasing the sensitivity of ultrasonic transmission measurements for elastic material parameter estimation (submitted)},
-  author = {Dreiling, Dmitrij and Itner, Dominik and Gravenkamp, Hauke and Claes, Leander and Birk, Carolin and Henning, Bernd},
+@inproceedings{Bulling2025,
+  title = {On the efficient simulation of ultrasonic waves on polygonal meshes},
+  booktitle = {{{DAGA Jahrestagung}} für {{Akustik}}},
+  author = {Bulling, Jannis and Gravenkamp, Hauke and Birk, Carolin},
   date = {2025},
-  journaltitle = {Measurement Science and Technology},
-  shortjournal = {Meas. Sci. Technol.}
+  abstract = {At many stages of technology development in ultrasonic Non-Destructive Testing (NDT) and Structural Health Monitoring (SHM), simulation tools are essential. Many modern approaches to ultrasonic testing, such as Model Assisted Probability of Detection, inverse problems with iterative optimization, or the generation of data for AI training, benefit from highly efficient simulation tools in terms of simulation time. In this paper, we investigate explicit time stepping in conjunction with the Scaled Boundary Finite Element Method (SBFEM) for approximating the linear elastic wave equation on 2D polygonal meshes, enhanced with a mass lumping technique for faster simulation times. We present the proposed changes to the formulation to successfully employ mass lumping. Examples are used to demonstrate that there is no loss of accuracy due to the approximated mass matrix. Furthermore, mass lumping reduces the simulation time and makes the simulation more efficient. In addition, the proposed simulation method has the advantages of SBFEM meshing techniques. These advantages include fast meshing using an image-based quad-tree algorithm or polygonal meshing by transforming triangular meshes based on a CAD model. The latter meshing method can include special crack tip elements that efficiently handle the stress singularity.}
+}
+
+@article{Codina2025,
+  title = {A posteriori error estimates for the finite element approximation  of the convection–diffusion–reaction equation  based on the variational multiscale concept (preprint)},
+  author = {Codina, Ramon and Gravenkamp, Hauke and Khan, Sheraz Ahmed},
+  date = {2025},
+  journaltitle = {Applied Numerical Mathematics},
+  shortjournal = {Appl. Numer. Math.},
+  doi = {10.48550/arXiv.2505.02531},
+  abstract = {In this study, we employ the variational multiscale (VMS) concept to develop a posteriori error estimates for the stationary convection-diffusion-reaction equation. The variational multiscale method is based on splitting the continuous part of the problem into a resolved scale (coarse scale) and an unresolved scale (fine scale). The unresolved scale (also known as the sub-grid scale) is modeled by choosing it proportional to the component of the residual orthogonal to the finite element space, leading to the orthogonal sub-grid scale (OSGS) method. The idea is then to use the modeled sub-grid scale as an error estimator, considering its contribution in the element interiors and on the edges. We present the results of the a priori analysis and two different strategies for the a posteriori error analysis for the OSGS method. Our proposal is to use a scaled norm of the sub-grid scales as an a posteriori error estimate in the so-called stabilized norm of the problem. This norm has control over the convective term, which is necessary for convection-dominated problems. Numerical examples show the reliable performance of the proposed error estimator compared to other error estimators belonging to the variational multiscale family.}
 }
 
 @inproceedings{Dreiling2020,
@@ -193,7 +209,8 @@
   volume = {91},
   number = {S1},
   pages = {S26-S31},
-  doi = {10.1515/teme-2024-0045}
+  doi = {10.1515/teme-2024-0045},
+  abstract = {Im Folgenden wird ein wellenleiterbasierter Ansatz zur Bestimmung von viskoelastischen Materialparametern für eine numerische Simulation der Schallausbreitung in transversal isotropen Polymeren vorgestellt. Ein hierfür entwickeltes Puls-Echo-Messverfahren liefert Messsignale, welche anschließend zur Schätzung der Materialparameter von absorbierenden, zylindrischen Polymerproben genutzt werden. Darüber hinaus kommen in dem Messaufbau Schallwandler zum Einsatz, die eine segmentierte ringförmige Anregung der Probe verursachen und die Sensitivität gegenüber Scherbewegungen erhöhen. Mithilfe einer ersten strahlentheoretischen Startwertschätzung werden eine multimodale, semianalytische Simulation der Schallausbreitung im Wellenleiter realisiert und schließlich die Materialparameter im inversen Ansatz geschätzt.}
 }
 
 @inproceedings{Dreiling2024a,
@@ -204,7 +221,23 @@
   volume = {2822},
   pages = {012169},
   doi = {10.1088/1742-6596/2822/1/012169},
-  url = {https://iopscience.iop.org/article/10.1088/1742-6596/2822/1/012169}
+  url = {https://iopscience.iop.org/article/10.1088/1742-6596/2822/1/012169},
+  abstract = {Due to their versatility, the application of polymers in research and industry continues to increase. Since the majority of design processes are simulation-aided, precise material parameters are required to obtain realistic results. The quasi-statically and destructively measured material parameters provided by manufacturers for this purpose are usually insufficient. An acoustic method is generally capable of measuring the frequencydependent viscoelastic material parameters in a non-destructive manner. In particular, an ultrasonic transmission measurement setup for determining these parameters has already been presented in previous publications. However, this approach has several drawbacks, including a low sensitivity to shear parameters. To increase the sensitivity to shear parameters, a measurement setup using a pulse-echo method with a corresponding inverse approach is presented to obtain viscoelastic material parameters of polymers. A brief comparison is made between the transmission and pulse-echo methods.}
+}
+
+@article{Dreiling2025a,
+  title = {Increasing the sensitivity of ultrasonic transmission measurements for elastic material parameter estimation},
+  author = {Dreiling, Dmitrij and Itner, Dominik and Gravenkamp, Hauke and Claes, Leander and Birk, Carolin and Henning, Bernd},
+  date = {2025},
+  journaltitle = {Measurement Science and Technology},
+  shortjournal = {Meas. Sci. Technol.},
+  volume = {36},
+  number = {6},
+  pages = {066110},
+  issn = {0957-0233, 1361-6501},
+  doi = {10.1088/1361-6501/add9b6},
+  url = {https://iopscience.iop.org/article/10.1088/1361-6501/add9b6},
+  abstract = {Ultrasonic transmission measurements can be used for material characterization, as the propagation time of sound waves and thus their velocity depends on the elastic material parameters. Measurement results for the elastic material parameters are acquired non-destructively using ultrasonic transmission measurements of hollow cylindrical polymer specimens. To determine the material parameters, an inverse approach is used comparing measurements with simulated data. Previous studies show that the procedure exhibits low sensitivity with respect to the shear parameters of the material. In order to increase the sensitivity, we propose to apply a spatially annular excitation on the base of the specimen. As a measure to analyze the sensitivities with respect to all parameters and their linear independence, we observe the volume of the parallelotope of the sensitivity vectors. Here, a scaled boundary finite element formulation of wave propagation in the specimen is expanded to yield derivative information directly, and a sensitivity analysis can be carried out efficiently. Finally, the results of this sensitivity analysis with regard to the annular excitation are also applied to the measurement setup.}
 }
 
 @inproceedings{Duczek2017,
@@ -236,7 +269,8 @@
   publisher = {Elsevier B.V.},
   issn = {0045-7825},
   doi = {10.1016/j.cma.2019.05.016},
-  url = {https://doi.org/10.1016/j.cma.2019.05.016}
+  url = {https://doi.org/10.1016/j.cma.2019.05.016},
+  abstract = {In the context of wave propagation analysis, the spectral element method (SEM) in conjunction with a diagonal mass matrix is often the method of choice. Therefore, it is of high importance to investigate the influence of different mass lumping schemes on the accuracy of the numerical results. To this end, we compare the performance of three established methods including the row-sum method, the nodal quadrature method, and the diagonal scaling method. The theoretical analysis of these methods reveals a close connection between them. Under certain conditions, that are discussed in detail in this article, we are able to show a direct equivalence between these three approaches. In this regard, the attainable accuracy of the numerical integration of the mass matrix plays an important role. By means of several dynamic benchmark problems we verify the theoretical results and illustrate the convergence properties of the lumped mass matrix SEM in comparison to a formulation based on the consistent mass matrix.}
 }
 
 @article{Duczek2019a,
@@ -250,7 +284,8 @@
   publisher = {Elsevier B.V.},
   issn = {0045-7825},
   doi = {10.1016/j.cma.2019.03.028},
-  url = {https://doi.org/10.1016/j.cma.2019.03.028}
+  url = {https://doi.org/10.1016/j.cma.2019.03.028},
+  abstract = {An efficient and robust finite element-based transient analysis of structures is important in many engineering applications. In this context, a diagonal or lumped mass matrix is an essential prerequisite. In the last decades, several methods to construct such a mass matrix have been proposed and therefore a comprehensive and unbiased evaluation of these approaches is needed. In the present article, we consequently investigate established mass lumping schemes, such as the row-sum method and the diagonal scaling method, as well as the recently proposed manifold-based method. Furthermore, the latter approach is rigorously extended to higher order serendipity finite elements in two and three dimensions. Note that the manifold-based method and the diagonal scaling method are very general approaches, in the sense that they are applicable to arbitrary nodal-based shape functions with arbitrary polynomial orders, while guaranteeing the positive-definiteness of the lumped mass matrix. With respect to the row-sum method the positivity is not ensured and negative or zero diagonal components might be computed. Consequently, a detailed analysis of the influence and performance of these mass lumping schemes on the numerical results is conducted. To this end, several dynamic benchmark models (including modal, harmonic, and transient analyses) are selected, showing that only suboptimal rates of convergence are attained if serendipity finite elements based on a diagonal mass matrix are employed.}
 }
 
 @article{Duczek2019b,
@@ -266,7 +301,8 @@
   publisher = {Elsevier B.V.},
   issn = {0045-7825},
   doi = {10.1016/j.cma.2020.112833},
-  url = {https://doi.org/10.1016/j.cma.2020.112833}
+  url = {https://doi.org/10.1016/j.cma.2020.112833},
+  abstract = {Advanced transition elements are of utmost importance in many applications of the finite element method (FEM) where a local mesh refinement is required. Considering problems that exhibit singularities in the solution, an adaptive hp-refinement procedure must be applied. Even today, this is a very demanding task especially if only quadrilateral/hexahedral elements are deployed and consequently the hanging nodes problem is encountered. These element types, are, however, favored in computational mechanics due to the improved accuracy compared to triangular/tetrahedral elements. Therefore, we propose a compatible transition element – xNy-element – which provides the capability of coupling different element types. The adjacent elements can exhibit different element sizes, shape function types, and polynomial orders. Thus, it is possible to combine independently refined h- and p-meshes. The approach is based on the transfinite mapping concept and constitutes an extension/generalization of the pNh-element concept. By means of several numerical examples, the convergence behavior is investigated in detail, and the asymptotic rates of convergence are determined numerically. Overall, it is found that the proposed approach provides very promising results for local mesh refinement procedures.}
 }
 
 @article{Eisentrager2021,
@@ -280,7 +316,8 @@
   publisher = {Elsevier B.V.},
   issn = {0045-7825},
   doi = {10.1016/j.cma.2021.114145},
-  url = {https://doi.org/10.1016/j.cma.2021.114145}
+  url = {https://doi.org/10.1016/j.cma.2021.114145},
+  abstract = {In this article, the construction of versatile transition elements for applications in dynamics is comprehensively discussed. Based on the transfinite mapping technique, also known as Coons–Gordon interpolation, piece-wise shape functions are derived such that an arbitrary number of elements with different ansatz spaces is coupled conformingly. This is an important prerequisite to enable the use of local mesh refinement strategies for regular quadrilateral discretizations. Due to the special construction of the shape functions, there are no hanging nodes that need to be taken care of. The focus in this contribution is on dynamics, and therefore, Lagrange polynomials are taken as the basis to construct shape functions for arbitrary transition elements. As a consequence, the Kronecker-delta and partition of unity properties are recovered. These properties are crucial to diagonalize the mass matrix using standard mass lumping techniques such as row-summing and diagonal scaling. The performance of the proposed family of elements is assessed by means of several benchmark examples, where the numerical rates of convergence are determined for both consistent and lumped mass matrix formulations.}
 }
 
 @inproceedings{Gravenkamp,
@@ -318,7 +355,8 @@
   pages = {2543--2557},
   publisher = {Elsevier},
   issn = {0022460X},
-  doi = {10.1016/j.jsv.2012.01.029}
+  doi = {10.1016/j.jsv.2012.01.029},
+  abstract = {In this paper, a method is presented for the numerical computation of dispersion properties and mode shapes of guided waves in plate structures. The formulation is based on the Scaled Boundary Finite Element Method. The through-thickness direction of the plate is discretized in the finite element sense, while the direction of propagation is described analytically. This leads to a standard eigenvalue problem for the calculation of wave numbers. The proposed method is not limited to homogeneous plates. Multilayered composites as well as structures with continuously varying material parameters in the direction of thickness can be modeled without essential changes in the formulation. Higher-order elements have been employed for the finite element discretization, leading to excellent convergence for complex structures. It is shown by numerical examples that this method provides highly accurate results with a small number of nodes while avoiding numerical problems and instabilities.}
 }
 
 @article{Gravenkamp2012a,
@@ -330,7 +368,8 @@
   volume = {132},
   number = {3},
   pages = {1358--1367},
-  doi = {10.1121/1.4740478}
+  doi = {10.1121/1.4740478},
+  abstract = {The scaled boundary finite element method is applied to the simulation of Lamb waves for ultrasonic testing applications. With this method, the general elastodynamic problem is solved, while only the boundary of the domain under consideration has to be discretized. The reflection of the fundamental Lamb wave modes from cracks of different geometry in a steel plate is modeled. A test problem is compared with commercial finite element software, showing the efficiency and convergence of the scaled boundary finite element method. A special formulation of this method is utilized to calculate dispersion relations for plate structures. For the discretization of the boundary, higher-order elements are employed to improve the efficiency of the simulations. The simplicity of mesh generation of a cracked plate for a scaled boundary finite element analysis is illustrated.}
 }
 
 @inproceedings{Gravenkamp2012b,
@@ -420,7 +459,8 @@
   pages = {3756--3771},
   publisher = {Elsevier},
   issn = {0022460X},
-  doi = {10.1016/j.jsv.2013.02.007}
+  doi = {10.1016/j.jsv.2013.02.007},
+  abstract = {In this paper, a numerical approach for the computation of dispersion relations for threedimensional waveguides with arbitrary cross-section is proposed. The formulation is based on the Scaled Boundary Finite Element Method (SBFEM). It is an extension of the approach previously derived for plate structures. It is shown that the wavenumbers of guided waves in a waveguide can be obtained as the eigenvalues of the Z matrix, which is well known in the SBFEM. The Hamiltonian properties of this matrix are utilized to derive an efficient way to compute the group velocities of propagating waves as eigenvalue derivatives. The cross-section of the waveguide is discretized using higherorder spectral elements. It is discussed in detail how symmetry axes can be utilized to reduce computational costs. In order to sort the solutions at different frequencies, a mode-tracking algorithm is proposed, based on the Pade ́ expansion.}
 }
 
 @unpublished{Gravenkamp2013b,
@@ -451,11 +491,12 @@
   journaltitle = {Ultrasonics},
   volume = {54},
   eprint = {24594445},
-  eprinttype = {pmid},
+  eprinttype = {pubmed},
   pages = {1373--1385},
   publisher = {Elsevier B.V.},
   issn = {1874-9968},
-  doi = {10.1016/j.ultras.2014.02.004}
+  doi = {10.1016/j.ultras.2014.02.004},
+  abstract = {This paper addresses the computation of dispersion curves and mode shapes of elastic guided waves in axisymmetric waveguides. The approach is based on a Scaled Boundary Finite Element formulation, that has previously been presented for plate structures and general three-dimensional waveguides with complex cross-section. The formulation leads to a Hamiltonian eigenvalue problem for the computation of wavenumbers and displacement amplitudes, that can be solved very efficiently. In the axisymmetric representation, only the radial direction in a cylindrical coordinate system has to be discretized, while the circumferential direction as well as the direction of propagation are described analytically. It is demonstrated, how the computational costs can drastically be reduced by employing spectral elements of extremely high order. Additionally, an alternative formulation is presented, that leads to real coefficient matrices. It is discussed, how these two approaches affect the computational efficiency, depending on the elasticity matrix. In the case of solid cylinders, the singularity of the governing equations that occurs in the center of the cross-section is avoided by changing the quadrature scheme. Numerical examples show the applicability of the approach to homogeneous as well as layered structures with isotropic or anisotropic material behavior.}
 }
 
 @article{Gravenkamp2014a,
@@ -468,7 +509,8 @@
   pages = {46--55},
   publisher = {Elsevier Ltd},
   issn = {00457949},
-  doi = {10.1016/j.compstruc.2013.10.014}
+  doi = {10.1016/j.compstruc.2013.10.014},
+  abstract = {In this paper we propose an algorithm to compute specific parts of the dispersion curves for elastic waveguides. The formulation is based on an axisymmetric representation of the Scaled Boundary Finite Element Method, where the wavenumbers of propagating modes are obtained as solutions of a Hamiltonian eigenvalue problem. The novel solution procedure involves tracing selected modes over a given frequency range and computing the corresponding solutions by means of inverse iteration. The resulting algorithm is applied in the context of material characterization, where the efficiency of the computation is crucial.}
 }
 
 @article{Gravenkamp2014b,
@@ -480,7 +522,8 @@
   volume = {135},
   number = {3},
   pages = {1127--1138},
-  doi = {10.1121/1.4864303}
+  doi = {10.1121/1.4864303},
+  abstract = {In this paper a numerical approach is presented to compute dispersion curves for solid waveguides coupled to an infinite medium. The derivation is based on the scaled boundary finite element method that has been developed previously for waveguides with stress-free surfaces. The effect of the surrounding medium is accounted for by introducing a dashpot boundary condition at the interface between the waveguide and the adjoining medium. The damping coefficients are derived from the acoustic impedances of the surrounding medium. Results are validated using an improved implementation of an absorbing region. Since no discretization of the surrounding medium is required for the dashpot approach, the required number of degrees of freedom is typically 10 to 50 times smaller compared to the absorbing region. When compared to other finite element based results presented in the literature, the number of degrees of freedom can be reduced by as much as a factor of 4000.}
 }
 
 @article{Gravenkamp2014c,
@@ -491,7 +534,8 @@
   shortjournal = {Comput. Struct.},
   volume = {141},
   pages = {36--45},
-  doi = {10.1016/j.compstruc.2014.05.010}
+  doi = {10.1016/j.compstruc.2014.05.010},
+  abstract = {The simulation of guided waves in plate structures and cylinders coupled to infinite fluids is addressed. The approach is based on the Scaled Boundary Finite Element Method. Only a straight line is discretized that represents the through-thickness direction or the radial direction. The surrounding fluid is accounted for by employing a damping boundary condition that is based on the analytical description of the radiation impedance. Since the radiation impedance is a function of the wavenumber in the waveguide, an iterative solution procedure is applied. The algorithm is highly efficient while the results are in agreement with the Global Matrix Method.}
 }
 
 @unpublished{Gravenkamp2014d,
@@ -517,7 +561,8 @@
   shortjournal = {J. Comput. Phys.},
   volume = {295},
   pages = {438--455},
-  doi = {10.1016/j.jcp.2015.04.032}
+  doi = {10.1016/j.jcp.2015.04.032},
+  abstract = {In this paper, an approach is presented to model the propagation of elastic waves and their interaction with defects in plate structures. The formulation is based on the Scaled Boundary Finite Element Method (SBFEM), ageneralsemi-analytical method requiring the discretization of boundaries only. For a homogeneous finite or infinite plate section, only the through-thickness direction of the plate is discretized. To describe a defect, the full boundary of a short plate section of irregular shape is discretized. High-order spectral elements are employed for the discretization. The formulation for infinite plates can model the transmission into an unbounded domain exactly. Results are compared with conventional Finite Element Analyses in both time domain and frequency domain. The presented approach allows for the simulation of complex reflection and scattering phenomena using a very small number of degrees of freedom while the mesh consists of one-dimensional elements only.}
 }
 
 @unpublished{Gravenkamp2014h,
@@ -555,7 +600,8 @@
   pages = {61--71},
   publisher = {Elsevier Ltd},
   issn = {00457949},
-  doi = {10.1016/j.compstruc.2014.11.007}
+  doi = {10.1016/j.compstruc.2014.11.007},
+  abstract = {An approach is presented to model elastic waveguides of arbitrary cross-section coupled to infinite solid media. The formulation is based on the scaled boundary-finite element method. The surrounding medium is approximately accounted for by a dashpot boundary condition derived from the acoustic impedances of the infinite medium. It is discussed under which circumstances this approximation leads to sufficiently accurate results. Computational costs are very low, since the surrounding medium does not require discretization and the number of degrees of freedom on the cross-section is significantly reduced by utilizing higher-order spectral elements.}
 }
 
 @unpublished{Gravenkamp2015a,
@@ -584,7 +630,8 @@
   publisher = {Elsevier Ltd},
   issn = {02638223},
   doi = {10.1016/j.compstruct.2015.08.135},
-  url = {http://linkinghub.elsevier.com/retrieve/pii/S0263822315008314}
+  url = {http://linkinghub.elsevier.com/retrieve/pii/S0263822315008314},
+  abstract = {We comment on the comparison made between the Scaled Boundary Finite Element Method (SBFEM) and the Rayleigh–Ritz method (RRM) in the paper by Liu et al. We demonstrate that their results obtained using the SBFEM are incorrect, leading to false conclusions about both the efficiency and accuracy of this method. After correcting their results we find that both methods are equally accurate, while the SBFEM is significantly more efficient.}
 }
 
 @unpublished{Gravenkamp2015d,
@@ -612,7 +659,8 @@
   publisher = {Elsevier B.V.},
   issn = {00457825},
   doi = {10.1016/j.cma.2016.11.030},
-  url = {http://dx.doi.org/10.1016/j.cma.2016.11.030}
+  url = {http://dx.doi.org/10.1016/j.cma.2016.11.030},
+  abstract = {We discuss the application of non-uniform rational B-splines (NURBS) in the scaled boundary finite element method (SBFEM) for the solution of wave propagation problems at rather high frequencies. We focus on the propagation of guided waves along prismatic structures of constant cross-section. Comparisons are made between NURBS-based discretizations and high-order spectral elements in terms of the achievable convergence rates. We find that for the same order of shape functions, NURBS can lead to significantly smaller errors compared with Lagrange polynomials. The difference becomes particularly important at very high frequencies, where spectral elements are prone to instabilities. Furthermore, we analyze the behavior of NURBS for the discretization of curved boundaries, where the benefit of exact geometry representation becomes crucial even in the low-frequency range.}
 }
 
 @article{Gravenkamp2016a,
@@ -624,7 +672,8 @@
   pages = {25--28},
   publisher = {Elsevier B.V.},
   issn = {0041624X},
-  doi = {10.1016/j.ultras.2016.03.003}
+  doi = {10.1016/j.ultras.2016.03.003},
+  abstract = {When modeling the propagation of elastic guided waves in plates or cylinders, Finite Element based numerical methods such as the Scaled Boundary Finite Element Method (SBFEM) or the SemiAnalytical Finite Element (SAFE) Method lead to an eigenvalue problem to be solved at each frequency. For the particular case of shear horizontal modes in a homogeneous plate or torsional modes in a homogeneous cylinder, the problem can be drastically simplified. The eigenvalues become simple functions of the frequency, while the eigenvectors are constant. The current contribution discusses how this behavior is represented in the numerical formulation and derives the expressions for the eigenvalues and eigenvectors as well as the dynamic stiffness matrix of infinite elastic waveguides.}
 }
 
 @unpublished{Gravenkamp2016c,
@@ -649,7 +698,8 @@
   shortjournal = {Int. J. Numer. Methods Eng.},
   volume = {110},
   pages = {1119--1141},
-  doi = {10.1002/nme.5445}
+  doi = {10.1002/nme.5445},
+  abstract = {We apply a combination of the transient scaled boundary finite element method (SBFEM) and quadtreebased discretization to model dynamic problems at high frequencies. We demonstrate that the current formulation of the SBFEM for dynamics tends to require more degrees of freedom than a corresponding spectral element discretization when dealing with smooth problems on regular domains. Thus, we improve the efficiency of the SBFEM by proposing a novel approach to reduce the number of auxiliary variables for transient analyses. Based on this improved SBFEM, we present a modified meshing procedure, which creates a quadtree mesh purely based on the geometry and allows arbitrary sizes and orders of elements, as well as an arbitrary number of different materials. The discretization of each subdomain is created automatically based on material parameters and the highest frequency of interest. The transition between regions of different properties is straightforward when using the SBFEM. The proposed approach is applied to image-based analysis with a particular focus on geological models.}
 }
 
 @article{Gravenkamp2017c,
@@ -660,7 +710,8 @@
   shortjournal = {Comput. Mech.},
   volume = {60},
   pages = {559--584},
-  doi = {10.1007/s00466-017-1424-1}
+  doi = {10.1007/s00466-017-1424-1},
+  abstract = {Quadtree-based domain decomposition algorithms offer an efficient option to create meshes for automatic image-based analyses. Without introducing hanging nodes the scaled boundary finite element method (SBFEM) can directly operate on such meshes by only discretizing the edges of each subdomain. However, the convergence of a numerical method that relies on a quadtree-based geometry approximation is often suboptimal due to the inaccurate representation of the boundary. To overcome this problem a combination of the SBFEM with the spectral cell method (SCM) is proposed. The basic idea is to treat each uncut quadtree cell as an SBFEM polygon, while all cut quadtree cells are computed employing the SCM. This methodology not only reduces the required number of degrees of freedom but also avoids a two-dimensional quadrature in all uncut quadtree cells. Numerical examples including static, harmonic, modal and transient analyses of complex geometries are studied, highlighting the performance of this novel approach.}
 }
 
 @inproceedings{Gravenkamp2017e,
@@ -690,7 +741,8 @@
   pages = {101--113},
   publisher = {Elsevier B.V.},
   issn = {0041624X},
-  doi = {10.1016/j.ultras.2017.07.019}
+  doi = {10.1016/j.ultras.2017.07.019},
+  abstract = {This paper presents an approach to model transmission and reflection phenomena of elastic guided waves in plates. The formulation is applied to plate structures containing notches, inclined edges, delaminations or (adhesive) joints. For these cases, only the thickness direction of the structure needs to be discretized at several locations, while the direction of propagation is described analytically. Consequently, the number of degrees of freedom is very small. Semi-infinite domains can be modeled, in which case the radiation condition is fulfilled exactly. Traction boundary conditions are introduced on the plate surface without requiring a mesh along the surface. Results are validated against conventional finite element implementations, showing the accuracy of the proposed approach and a reduction of the computational costs by typically 2–3 orders of magnitude.}
 }
 
 @article{Gravenkamp2018a,
@@ -702,7 +754,8 @@
   volume = {333},
   pages = {238--256},
   publisher = {Elsevier B.V.},
-  doi = {10.1016/j.cma.2018.01.031}
+  doi = {10.1016/j.cma.2018.01.031},
+  abstract = {A polygonal scaled boundary finite element method (SBFEM) is proposed for linear elastodynamics in two dimensions. The domain is divided into non-overlapping polygonal elements, and the scaled boundary finite element approach is employed over each polygon. The advantages are that an arbitrary interpolation order can be used on each polygon and we can choose the optimal element order on each edge individually. Moreover, the SBFEM simplifies the numerical integration over the polygons when compared to conventional approaches. The dynamic stiffness matrix is computed by employing the continued fraction expansion. The influence of the shape of the polygon and the element order on the boundary of each polygon are studied. The robustness and the accuracy of the approach are demonstrated with numerical examples.}
 }
 
 @unpublished{Gravenkamp2018b,
@@ -735,7 +788,8 @@
   volume = {28},
   pages = {473--494},
   issn = {1886-1784},
-  doi = {10.1007/s11831-019-09385-1}
+  doi = {10.1007/s11831-019-09385-1},
+  abstract = {The scaled boundary finite element method (SBFEM) is a semi-analytical approach to solving partial differential equations (PDEs), in which a finite element approximation is deployed for the domain's boundary, while analytical solutions are sought to describe the behavior in the interior of the domain. Since the inception of SBFEM, a number of different shape functions have been applied to interpolate the solution on the boundary. The overarching goal of this communication is to review the respective advantages and disadvantages of the available interpolants in the context of the SBFEM and develop recommendations regarding their application. In addition, we discuss in detail the discretization employed in the so-called diagonal SBFEM.}
 }
 
 @unpublished{Gravenkamp2019a,
@@ -763,7 +817,8 @@
   publisher = {Elsevier B.V.},
   issn = {0045-7825},
   doi = {10.1016/j.cma.2020.113274},
-  url = {https://doi.org/10.1016/j.cma.2020.113274}
+  url = {https://doi.org/10.1016/j.cma.2020.113274},
+  abstract = {We present, for the first time, the application of explicit time-stepping schemes within the context of the scaled boundary finite element method (SBFEM). To this end, we discuss in detail how and under which circumstances diagonal mass matrices can be obtained. In addition, we propose an approach to improving the interpolation accuracy of quadratic scaled boundaryshape functions. In essence, our results show that mass lumping can be achieved without loss of accuracy if linear or quadratic node-based shape functions are deployed for the interpolation on the subdomain boundaries. This finding also applies to non-convex elements, which allow coarse discretizations — and, hence, comparably large time steps — in problems involving singularities. We discuss the application to polygonal and severely distorted meshes. Numerical examples include problems from the fields of acoustics, elasticity, and thermal diffusion.}
 }
 
 @inproceedings{Gravenkamp2020a,
@@ -783,7 +838,8 @@
   shortjournal = {Comput. Mech.},
   volume = {66},
   pages = {911--930},
-  doi = {10.1007/s00466-020-01884-4}
+  doi = {10.1007/s00466-020-01884-4},
+  abstract = {The scaled boundary finite element method (SBFEM) has recently been employed as an efficient tool to model threedimensional structures, in particular when the geometry is provided as a voxel-based image. To this end, an octree decomposition of the computational domain is deployed, and each cubic cell is treated as an SBFE subdomain. The surfaces of each subdomain are discretized in the finite element sense. We improve on this idea by combining the semi-analytical concept of the SBFEM with a particular class of transition elements on the subdomains’ surfaces. Thus, a triangulation of these surfaces as executed in previous works is avoided, and consequently, the number of surface elements and degrees of freedom is reduced. In addition, these discretizations allow coupling elements of arbitrary order such that local p-refinement can be achieved straightforwardly.}
 }
 
 @thesis{Gravenkamp2021,
@@ -808,7 +864,8 @@
   journaltitle = {Ultrasonics},
   volume = {135},
   pages = {107112},
-  doi = {10.1016/j.ultras.2023.107112}
+  doi = {10.1016/j.ultras.2023.107112},
+  abstract = {The dispersion curves of (elastic) waveguides frequently exhibit crossings and osculations (also known as veering, repulsion, or avoided crossing). Osculations are regions in the dispersion diagram where curves approach each other arbitrarily closely without ever crossing before veering apart. In semi-analytical (undamped) waveguide models, dispersion curves are obtained as solutions to discretized parameterized Hermitian eigenvalue problems. In the mathematical literature, it is known that such eigencurves can exhibit crossing points only if the corresponding matrix flow (parameter-dependent matrix) is uniformly decomposable. We discuss the implications for the solution of the waveguide problem. In particular, we make use of a simple algorithm recently suggested in the literature for decomposing matrix flows. We also employ a method for mode tracing based on approximating the eigenvalue problem for individual modes by an ordinary differential equation that can be solved by standard procedures.}
 }
 
 @software{Gravenkamp2023,
@@ -827,7 +884,8 @@
   shortjournal = {J. Comput. Phys.},
   volume = {501},
   pages = {112754},
-  doi = {10.1016/j.jcp.2024.112754}
+  doi = {10.1016/j.jcp.2024.112754},
+  abstract = {We propose a finite-element formulation for simulating multi-component flows occupying the same domain with spatially varying concentrations. Each constituent is assumed to behave as an incompressible Newtonian fluid, and solutions are sought for the velocities and volume fractions of each phase, as well as the common pressure. Stabilization terms are derived within the framework of the variational multiscale method based on an approximation of the finite-element residual to achieve control of the pressure and volume fractions. We utilize the concept of termby-term stabilization in conjunction with orthogonal subgrid scales, thus incorporating only those terms of the residual essential to obtain stability and projecting them on a space orthogonal to the finite element space. The resulting system of equations is solved in a monolithic manner, requiring a small number of nonlinear iterations. Several benchmark tests have been performed to confirm the stability and optimal asymptotic convergence rates for linear and higher-order elements using the proposed formulation.}
 }
 
 @unpublished{Gravenkamp2023b,
@@ -852,7 +910,8 @@
   shortjournal = {Comput. Methods Appl. Mech. Eng.},
   volume = {418},
   pages = {116488},
-  doi = {10.1016/j.cma.2023.116488}
+  doi = {10.1016/j.cma.2023.116488},
+  abstract = {The Reynolds equation, combined with the Elrod algorithm for including the effect of cavitation, resembles a nonlinear convection–diffusion–reaction (CDR) equation. Its solution by finite elements is prone to oscillations in convection-dominated regions, which are present whenever cavitation occurs. We propose a stabilized finite-element method that is based on the variational multiscale method and exploits the concept of orthogonal subgrid scales. We demonstrate that this approach only requires one additional term in the weak form to obtain a stable method that converges optimally when performing mesh refinement.}
 }
 
 @software{Gravenkamp2023e,
@@ -898,11 +957,22 @@
   title = {Computation of leaky waves in layered structures coupled to unbounded media by exploiting multiparameter eigenvalue problems},
   author = {Gravenkamp, Hauke and Plestenjak, Bor and Kiefer, Daniel A and Jarlebring, Elias},
   date = {2025},
-  journaltitle = {Journal of Sound And Vibration},
+  journaltitle = {Journal of Sound and Vibration},
   shortjournal = {J. Sound Vib.},
   volume = {596},
   pages = {118716},
-  doi = {10.1016/j.jsv.2024.118716}
+  doi = {10.1016/j.jsv.2024.118716},
+  abstract = {We present a semi-analytical approach to compute quasi-guided elastic wave modes in horizontally layered structures radiating into unbounded fluid or solid media. This problem is of relevance, e.g., for the simulation of guided ultrasound in embedded plate structures or seismic waves in soil layers over an elastic half-space. We employ a semi-analytical formulation to describe the layers, thus discretizing the thickness direction by means of finite elements. For a free layer, this technique leads to a well-known quadratic eigenvalue problem for the mode shapes and corresponding horizontal wavenumbers. Incorporating the coupling conditions to account for the adjacent half-spaces gives rise to additional terms that are nonlinear in the wavenumber. We show that the resulting nonlinear eigenvalue problem can be cast in the form of a multiparameter eigenvalue problem whose solutions represent the wave numbers in the plate and in the half-spaces. The multiparameter eigenvalue problem is solved numerically using recently developed algorithms. Matlab implementations of the proposed methods are publicly available.}
+}
+
+@article{Gravenkamp2025a,
+  title = {Computing leaky waves in semi-analytical waveguide models by exponential residual relaxation (submitted)},
+  author = {Gravenkamp, Hauke and Plestenjak, Bor and Kiefer, Daniel A},
+  date = {2025},
+  journaltitle = {International Journal for Numerical Methods in Engineering},
+  shortjournal = {Int. J. Numer. Methods Eng.},
+  doi = {10.48550/arXiv.2505.04735},
+  abstract = {Semi-analytical methods for the modeling of guided waves in structures of constant cross-section lead to frequency-dependent polynomial eigenvalue problems for the wavenumbers and mode shapes. Solving these eigenvalue problems for a range of frequencies results in continuous eigencurves that are of relevance in practical applications of ultrasonic measurement systems. Recent research has shown that eigencurves of parameter-dependent eigenvalue problems can alternatively be computed as solutions of a system of ordinary differential equations, which are obtained by postulating an exponentially decaying residual of a modal solution. This general concept for solving parameter-dependent matrix equations is, in this context, known as Zeroing Neural Networks or Zhang Neural Networks (ZNN). We exploit this idea to develop an efficient method for computing the dispersion curves of plate structures coupled to unbounded solid or fluid media. In these scenarios, the alternative formulation is particularly useful since the boundary conditions give rise to nonlinear terms that severely hinder the application of traditional solvers.}
 }
 
 @unpublished{Gravenkampa,
@@ -921,7 +991,8 @@
   pages = {54--64},
   issn = {0041624X},
   doi = {10.1016/j.ultras.2015.06.011},
-  url = {http://www.sciencedirect.com/science/article/pii/S0041624X15001584}
+  url = {http://www.sciencedirect.com/science/article/pii/S0041624X15001584},
+  abstract = {In this paper, a method to determine the complex dispersion relations of axially symmetric guided waves in cylindrical structures is presented as an alternative to the currently established numerical procedures. The method is based on a spectral decomposition into eigenfunctions of the Laplace operator on the cross-section of the waveguide. This translates the calculation of real or complex wave numbers at a given frequency into solving an eigenvalue problem. Cylindrical rods and plates are treated as the asymptotic cases of cylindrical structures and used to generalize the method to the case of hollow cylinders. The presented method is superior to direct root-finding algorithms in the sense that no initial guess values are needed to determine the complex wave numbers and that neither starting at low frequencies nor subsequent mode tracking is required. The results obtained with this method are shown to be reasonably close to those calculated by other means and an estimate for the achievable accuracy is given.}
 }
 
 @inproceedings{Iqbal2019,
@@ -941,7 +1012,8 @@
   shortjournal = {Comput. Methods Appl. Mech. Eng.},
   volume = {387},
   pages = {114106},
-  doi = {10.1016/j.cma.2021.114106}
+  doi = {10.1016/j.cma.2021.114106},
+  abstract = {This study presents the development of the scaled boundary finite element method to model discrete crack propagation induced by thermal loads. The SBFEM excels in modeling stress singularities at sharp crack tips with high accuracy. Polygon meshes are used so that a robust local re-meshing algorithm can be utilized to propagate the crack. The scaled boundary finite element formulation for steady-state thermal stress analysis is presented. Following a scaled boundary finite element analysis of a given thermal problem, the effect of initial strains due to temperature is taken into account semi-analytically in a subsequent stress analysis. Several numerical examples are presented to validate the technique and illustrate its salient features.}
 }
 
 @article{Iqbal2022,
@@ -952,7 +1024,8 @@
   shortjournal = {Eng. Fract. Mech.},
   volume = {264},
   pages = {108305},
-  doi = {10.1016/j.engfracmech.2022.108305}
+  doi = {10.1016/j.engfracmech.2022.108305},
+  abstract = {The scaled boundary finite element method is extended to model fracture in functionally graded materials (FGM) under coupled thermo-mechanical loads. The governing equations of coupled thermo-mechanical equilibrium are discretized using scaled boundary shape functions enriched with the thermal load terms. The material gradient is modeled as a series of power functions, and the stiffness matrix is calculated semi-analytically. Stress intensity factors and 𝑇 −stress are directly calculated from their definition without any need for additional post-processing techniques. Arbitrary-sided polygon elements are employed for flexible mesh generation. Several numerical examples for isotropic and orthotropic FGMs are presented to validate the proposed technique.}
 }
 
 @article{Iqbal2023,
@@ -963,7 +1036,8 @@
   shortjournal = {Eng. Fract. Mech.},
   volume = {127},
   pages = {104056},
-  doi = {10.1016/j.tafmec.2023.104056}
+  doi = {10.1016/j.tafmec.2023.104056},
+  abstract = {To model fracture in functionally graded materials (FGMs), the scaled boundary finite element method (SBFEM) is extended to examine the effects of fully coupled transient thermoelasticity. Previously developed SBFEM supplementary shape functions are utilized to model thermal stresses. The spatial variation of thermal and mechanical properties of FGMs are approximated by polynomial functions facilitating the semianalytical evaluation of coefficient matrices. The dynamic stress intensity factors (SIFs) are also evaluated semi-analytically from their definitions without the need for additional post-processing. Scaled boundary polygon elements are employed to facilitate the meshing of complex crack geometries. Both isotropic and orthotropic materials with different material gradation functions are considered. To study the transient effects of thermoelasticity on fracture parameters, several numerical examples with different crack configurations and boundary conditions are considered. The current approach is validated by comparing the results of dynamic SIFs with available reference solutions.}
 }
 
 @inproceedings{Itner2020,
@@ -985,7 +1059,8 @@
   pages = {106389},
   publisher = {Elsevier B.V.},
   issn = {0041-624X},
-  doi = {10.1016/j.ultras.2021.106389}
+  doi = {10.1016/j.ultras.2021.106389},
+  abstract = {In this paper, we present an approach to model the propagation of high-frequency elastic guided waves in solid or hollow cylinders. This formulation requires only discretization of the radial direction, whereas the circumferential direction is approximated via a truncated Fourier series, and the axial direction is described analytically. The model is extended to allow applying arbitrary non-symmetric loads 𝑓 (𝑟, 𝜃) on the flat cylinder surface. Efficiency is increased by a proposed methodology to limit the number of Fourier coefficients and by the implementation of hierarchical shape functions to dynamically adjust discretization with respect to frequency. Results are validated against conventional finite element applications, demonstrating the accuracy of the model and a reduction of the computing time by three orders of magnitude. Additionally, we apply a matrix function solution for the scaled boundary finite element method leading to a linear solution in the static case.}
 }
 
 @inproceedings{Itner2021,
@@ -1006,6 +1081,27 @@
   doi = {10.1002/pamm.202100128}
 }
 
+@article{Itner2025,
+  title = {A modified {{Levenberg-Marquardt}} method for estimating the elastic material parameters of polymer waveguides using residuals between autocorrelated frequency responses (submitted)},
+  author = {Itner, Dominik and Dreiling, Dmitrij and Gravenkamp, Hauke and Henning, Bernd and Birk, Carolin},
+  date = {2025},
+  journaltitle = {Mechanical Systems and Signal Processing},
+  shortjournal = {Mech. Syst. Signal Process.},
+  eprint = {2507.01706},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2507.01706},
+  url = {http://arxiv.org/abs/2507.01706},
+  abstract = {In this contribution, we address the estimation of the frequency-dependent elastic parameters of polymers in the ultrasound range, which is formulated as an inverse problem. This inverse problem is implemented as a nonlinear regression-type optimization problem, in which the simulation signals are fitted to the measurement signals. These signals consist of displacement responses in waveguides, focusing on hollow cylindrical geometries to enhance the simulation efficiency. To accelerate the optimization and reduce the number of model evaluations and wait times, we propose two novel methods. First, we introduce an adaptation of the Levenberg-Marquardt method derived from a geometrical interpretation of the least-squares optimization problem. Second, we introduce an improved objective function based on the autocorrelated envelopes of the measurement and simulation signals. Given that this study primarily relies on simulation data to quantify optimization convergence, we aggregate the expected ranges of realistic material parameters and derive their distributions to ensure the reproducibility of optimizations with proper measurements. We demonstrate the effectiveness of our objective function modification and step adaptation for various materials with isotropic material symmetry by comparing them with a state-of-the-art optimization method. In all cases, our method reduces the total number of model evaluations, thereby shortening the time to identify the material parameters.}
+}
+
+@inproceedings{Kadlag2025,
+  title = {On the performance and convergence of {{PINNs}} for problems in linear elasticity},
+  booktitle = {Proceedings in {{Applied Mathematics}} and {{Mechanics}}},
+  author = {Kadlag, Dipraj and Birk, Carolin and Natarajan, Sundararajan and Gravenkamp, Hauke},
+  date = {2025}
+}
+
 @article{Kausel2019,
   title = {On the numerical solution of matrix {{Bessel}} equations},
   author = {Kausel, Eduardo and Gravenkamp, Hauke},
@@ -1015,7 +1111,8 @@
   volume = {99},
   number = {8},
   pages = {e201800288},
-  doi = {10.1002/zamm.201800288}
+  doi = {10.1002/zamm.201800288},
+  abstract = {This article deals with the numerical evaluation of certain systems of second order differential equations that are analogous in structure to the scalar Bessel equations, i.e. 𝐀(𝑧2𝐮′′ + 𝑧𝐮′)+(𝑧2𝐌 − 𝐆)𝐮 = 𝟎. The governing equation includes three distinct coefficient matrices 𝐀, 𝐌, 𝐆 that we assume to be real, symmetric, and positive definite. However, allowance is also made for 𝐆 to be semi-definite. We first review the conditions under which rigorous closed-form solutions are possible, and this occurs when the various matrices share a common set of eigenvectors, even if not the eigenvalues. We find in that case that the response consists in a linear combination of conventional Bessel functions. More generally, we propose three alternative methods to accomplish the evaluation: • An ascending series solution based on the Frobenius method. • An effective asymptotic solution that provides results in very close agreement with the first method. It is stable and accurate for a wide range of values of the argument - more so than the first method. • A direct numerical integration solution using the fifth order Runge-Kutta-Nyström algorithm. It works well, except for some idiosyncrasies that depend on the presence of eigenvalues with widely different magnitudes, as will be explained. We determined that all of these techniques produce highly accurate response functions when measured in terms of the residual to the differential equation, and in all cases we found that residual to be negligible.}
 }
 
 @article{Khajah2020,
@@ -1025,7 +1122,18 @@
   journaltitle = {Wave Motion},
   volume = {104},
   pages = {102732},
-  doi = {10.1016/j.wavemoti.2021.102732}
+  doi = {10.1016/j.wavemoti.2021.102732},
+  abstract = {In this study, the Scaled Boundary Finite Element Method (SBFEM) was used to perform analyses and evaluate the objective function in shape optimization of devices relying on acoustic wave propagation. Similar to the Boundary Element Method (BEM), the SBFEM requires only the discretization of the boundary of the computational domain. However, unlike BEM, there is no need for a fundamental solution; thus, the SBFEM provides a flexibility similar to that of the Finite Element Method (FEM). The dimension reduction is achieved by representing the solution analytically inside the domain and numerically on the boundary. Consequently, the SBFEM provides a flexible platform for shape optimization and alleviates the re-meshing difficulties encountered in FEM. It was shown that domain boundaries can be optimized with a minimum number of design variables, while the existing accurate transparent boundary conditions effectively eliminate the artificial numerical reflections for a wide range of frequencies.}
+}
+
+@article{Khan2025,
+  title = {A variational multiscale approach to goal-oriented error estimation in finite element analysis of  convection-diffusion-reaction equation problems (submitted)},
+  author = {Khan, Sheraz Ahmed and Codina, Ramon and Gravenkamp, Hauke},
+  date = {2025},
+  journaltitle = {Applied Mathematical Modelling},
+  shortjournal = {Appl. Math. Model.},
+  doi = {10.48550/arXiv.2505.02946},
+  abstract = {This paper presents a goal-oriented a posteriori error estimation framework for linear functionals in the stabilized finite element discretization of the stationary convection-diffusion-reaction (CDR) equation. The theoretical framework for error estimation is based on the variational multiscale (VMS) concept, where the solution is decomposed into resolved (finite element) and unresolved (sub-grid) scales. In this work, we propose an orthogonal sub-grid scale (OSGS) method for a goal-oriented error estimation in VMS discretizations. In the OSGS approach, the space of the sub-grid scales (SGSs) is orthogonal to the finite element space. The error is estimated in the quantity of interest, given by the linear functional Q(u) of the unknown u. If the SGS u′ is estimated, the error in the quantity of interest can be approximated by Q(u′). Our approach is compared with a duality-based a posteriori error estimation method, which requires the solution of an additional auxiliary problem. The results indicate that both methods yield similar error estimates, whereas the VMS-based explicit approach is computationally less expensive than the duality-based implicit approach. Numerical tests demonstrated the effectiveness of our proposed error estimation techniques in terms of the quantity of interest functionals.}
 }
 
 @article{Kiefer2022,
@@ -1037,7 +1145,8 @@
   volume = {153},
   number = {2},
   pages = {1386--1398},
-  doi = {10.1121/10.0017252}
+  doi = {10.1121/10.0017252},
+  abstract = {Dispersion curves of elastic waveguides exhibit points where the group velocity vanishes while the wavenumber remains finite. These are the so-called zero-group-velocity (ZGV) points. As the elastodynamic energy at these points remains confined close to the source, they are of practical interest for nondestructive testing and quantitative characterization of structures. These applications rely on the correct prediction of the ZGV points. In this contribution, we first model the ZGV resonances in anisotropic plates based on the appearance of an exceptional mode. The resulting governing equation is interpreted as a twoparameter eigenvalue problem. We then present three complementary numerical procedures capable of computing ZGV points in arbitrary nondissipative elastic waveguides. The first method is globally convergent and guarantees to find all ZGV points but can only be used for small problems. The second procedure is a very fast, generally-applicable, Newton-type iteration that is locally convergent and requires initial guesses. The third method combines both kind of approaches and yields a procedure that is applicable to large problems, does not require initial guesses and is likely to find all ZGV points.}
 }
 
 @inproceedings{Krome2015,
@@ -1069,7 +1178,8 @@
   pages = {75--85},
   publisher = {Elsevier B.V.},
   issn = {0041624X},
-  doi = {10.1016/j.ultras.2016.05.014}
+  doi = {10.1016/j.ultras.2016.05.014},
+  abstract = {This paper presents a mode-tracing approach for elastic guided waves based on analytically computed derivatives and includes a study of interesting phenomena in the dispersion curve representation. Numerical simulation is done by means of the Scaled Boundary Finite Element Method (SBFEM). Two approaches are used to identify the characteristics of the resulting wave modes: Taylor approximation and Padé approximation. Higher order differentials of the underlying eigenvalue problem are the basis for these approaches. Remarkable phenomena in potentially critical frequency regions are identified and the tracing approach is adapted to these regions. Additionally, a stabilization of the solution process is suggested.}
 }
 
 @article{Krome2017,
@@ -1082,6 +1192,7 @@
   pages = {790--808},
   issn = {10970207},
   doi = {10.1002/nme.5306},
+  abstract = {This work introduces a semi-analytical formulation for the simulation and modeling of curved structures based on the scaled boundary finite element method (SBFEM). This approach adapts the fundamental idea of the SBFEM concept to scale a boundary to describe a geometry. Until now, scaling in SBFEM has exclusively been performed along a straight coordinate that enlarges, shrinks, or shifts a given boundary. In this novel approach, scaling is based on a polar or cylindrical coordinate system such that a boundary is shifted along a curved scaling direction. The derived formulations are used to compute the static and dynamic stiffness matrices of homogeneous curved structures. The resulting elements can be coupled to general SBFEM or FEM domains. For elastodynamic problems, computations are performed in the frequency domain. Results of this work are validated using the global matrix method and standard finite element analysis.},
   isbn = {978-1-4577-0079-8}
 }
 
@@ -1096,7 +1207,15 @@
   publisher = {Elsevier Ltd},
   issn = {00457949},
   doi = {10.1016/j.compstruc.2017.06.015},
-  url = {http://linkinghub.elsevier.com/retrieve/pii/S0045794917302134}
+  url = {http://linkinghub.elsevier.com/retrieve/pii/S0045794917302134},
+  abstract = {This work addresses the computation of stiffness matrices for general prismatic structures with an arbitrary cross section. The presented approach is based on the scaled boundary finite element method (SBFEM), a semi-analytical method, which can be used to model structures by only discretizing the boundary of a domain. For prismatic structures, the process is further simplified, as only the cross section of the structure has to be discretized. Thus, a particular semi-analytical finite element is constructed for bounded and unbounded domains. The proposed approach leads to a frequency-dependent stiffness matrix. This stiffness matrix can easily be coupled to other prismatic SBFEM domains or general SBFEM domains. Necessary modifications to include forces along the scaling direction, such as body loads, are addressed. The results of the proposed approach are compared to those of traditional FEM models obtained using commercially available software.}
+}
+
+@inproceedings{Kuhn,
+  title = {Towards the efficient simulation of large-scale soil-structure interaction problems using the scaled boundary finite element method},
+  booktitle = {Proceedings in {{Applied Mathematics}} and {{Mechanics}}},
+  author = {Kuhn, Tobias and Gravenkamp, Hauke and Birk, Carolin},
+  date = {2025}
 }
 
 @article{Kuhn2024,
@@ -1107,7 +1226,8 @@
   shortjournal = {Eng. Anal. Bound. Elem.},
   volume = {168},
   pages = {105891},
-  doi = {10.1016/j.enganabound.2024.105891}
+  doi = {10.1016/j.enganabound.2024.105891},
+  abstract = {This study proposes an explicit time-integration scheme for the scaled boundary finite element method applied to unbounded domains, leveraging the acceleration unit-impulse response formulation and a block-wise mass lumping strategy to enhance computational efficiency. Additionally, adopting an extrapolation scheme in the calculation of the linearly varying acceleration response and exploiting the asymptotically linear behavior by truncating the convolution integral leads to a robust and efficient explicit time-integration scheme. The proposed methodology is validated through numerical examples, demonstrating its potential for large-scale wave propagation problems in unbounded and heterogeneous media.}
 }
 
 @article{Lozano2022,
@@ -1117,7 +1237,8 @@
   journaltitle = {Wave Motion},
   volume = {120},
   pages = {103158},
-  doi = {10.1016/j.wavemoti.2023.103158}
+  doi = {10.1016/j.wavemoti.2023.103158},
+  abstract = {It can be difficult to efficiently model ultrasonic waves in 3D structures, especially when the computational model needs to account for complex geometries. This contribution presents a solution based on the Scaled Boundary Finite Element Method (SBFEM). It is a numerical tool suitable for elastodynamic problems. A space-tree discretisation, namely quad-trees, is used. This technique allows the decomposition of an image into quadrilaterals or quads, which are extruded to generate the 3D plate geometry. In particular, small quads resolve regions with discontinuities, allowing them to represent fine details in the structure. Moreover, this meshing technique allows for exploiting cell similarities, making the calculation procedure more efficient. The space-tree discretisations are generated from a high-resolution image containing all the information about damaged regions or boundary conditions. The resulting SBFEM polyhedral domains employ transition elements to ensure correct coupling between cells of different sizes. The analytical solution of a cylindrical scatterer serves as a reference to validate the proposed approach. Other examples also demonstrate the validity of the methodology and its flexibility.}
 }
 
 @article{Lozano2023,
@@ -1128,7 +1249,20 @@
   shortjournal = {Comput. Methods Appl. Mech. Eng.},
   volume = {417},
   pages = {116465},
-  doi = {10.1016/j.cma.2023.116465}
+  doi = {10.1016/j.cma.2023.116465},
+  abstract = {We introduce a novel approach that combines the scaled boundary finite element method (SBFEM) with a mortar coupling to enhance the computational modelling of elastic wave propagation and interaction with local features in the ultrasonic range. The key objective is to achieve decoupling between different regions of interest, enabling independent meshes for the zones where waves either propagate or interact with localised discontinuities in the elastic media. This decoupling allows us to exploit the benefits offered by various SBFEM formulations. Thus, we can select the most suitable solution for each specific region. An important concept we emphasise is the differentiation between the near field and far field regions. The near field encompasses zones where the precise representation of small features compared to the wavelength is crucial. At the same time, the far field comprises homogeneous regions where the waves propagate without interactions, eventually radiating towards infinity if the domain is unbounded. By separating these two zones, we can improve the computational performance by employing finer discretisation only where necessary. Furthermore, this decoupling enables the reuse of far field models in parametric analyses, making it highly valuable for scenarios focused particularly on local elastic wave interactions. This approach offers considerable potential in such cases. The modelling technique is validated, and its potential is demonstrated through practical applications.}
+}
+
+@article{Lozano2025,
+  title = {Simulations of ultrasonic guided wave scattering using the scaled boundary finite element method},
+  author = {Lozano, Daniel and Gravenkamp, Hauke and Birk, Carolin},
+  date = {2025},
+  journaltitle = {Computer Methods in Applied Mechanics and Engineering},
+  shortjournal = {Comput. Methods Appl. Mech. Eng.},
+  volume = {445},
+  pages = {118204},
+  doi = {j.cma.2025.118204},
+  abstract = {This paper presents a numerical framework employing the Scaled Boundary Finite Element Method (SBFEM) for efficiently solving ultrasonic guided wave modal scattering problems and constructing scattering matrices (S-matrices). The framework integrates hierarchical octree meshing and an enhanced far field formulation. It incorporates boundary integrals, enabling an accurate representation of defect interactions with guided waves. Validation is performed using a benchmark test supported by an error estimation method based on energy balance. Two practical examples are used to showcase the simulation framework, where the scattering of guided waves with surface-breaking and subsurface cracks near rivet holes is studied.}
 }
 
 @inproceedings{Nattoji-Shara2022,
@@ -1160,7 +1294,8 @@
   shortjournal = {Int. J. Mech. Sci.},
   volume = {199},
   pages = {106427},
-  doi = {10.1016/j.ijmecsci.2021.106427}
+  doi = {10.1016/j.ijmecsci.2021.106427},
+  abstract = {The behavior of rotor systems with hydrodynamic bearings can be affected crucially by the nonlinear bearing forces. These forces are incorporated in rotordynamic simulations by solving the Reynolds equation in every step of a time integration scheme. Since closed-form analytical solutions of the Reynolds equation are known only for simplified boundary conditions, numerical methods and look-up table approaches are applied. To obtain accurate and convergent results, numerical solutions require a fine discretization, while the look-up tables require a fine grid of interpolation points. In both cases, the numerical effort of the rotordynamic simulation is dominated by the computation of the bearing forces. In this study, a semi-analytical solution of the Reynolds equation based on the Scaled Boundary Finite Element Method (SBFEM) is developed to reduce the numerical effort of the overall simulation. In contrast to a purely numerical solution, the two-dimensional pressure field is discretized in only one coordinate direction, whereas in the other direction, an analytical formulation is used. This results in a system of non-homogeneous ordinary differential equations, which is solved under consideration of the boundary conditions. Since the complexity of the SBFEM model and the resulting numerical effort depend on the modeling of the oil supply groove, three different models are analyzed in this paper. The equations are derived, the solutions are verified, and their numerical efficiency is investigated in comparison to an FEM solution, which is one of the standard numerical approaches.}
 }
 
 @inproceedings{Pfeil2021,
@@ -1189,30 +1324,33 @@
   shortjournal = {Int. J. Mech. Sci.},
   volume = {247},
   pages = {108164},
-  doi = {10.1016/j.ijmecsci.2023.108164}
+  doi = {10.1016/j.ijmecsci.2023.108164},
+  abstract = {The numerical effort of rotordynamic simulations with hydrodynamic bearings is often dominated by the solution of the Reynolds equation. Because of the nonlinear fluid–structure interaction, this equation needs to be solved in every time step. Although computationally efficient analytical approximations and look-up table techniques exist, these approaches often do not provide the necessary modeling depth and accuracy. Thus, in many cases, numerical methods are preferred despite their computational cost. In recent studies, a semi-analytical solution of the Reynolds equation has been developed based on the scaled boundary finite element method (SBFEM) with the objective of improving the numerical efficiency. The developed approach assumed Gümbel conditions, which means that cavitation was handled in a highly simplified manner. In this work, the SBFEM solution is for the first time combined with a more complex, nonlinear cavitation model based on the Elrod algorithm. Because of the semi-analytical technique, this requires a simplification of the switch function that defines the locations of the pressure and cavitation zones. However, as demonstrated in this paper, the resulting bearing forces are still in good agreement with a standard numerical reference solution based on the finite volume method (FVM). Since the SBFEM model uses only a one-dimensional discretization, its high-order formulation is very straightforward, even in case of a nonequidistant grid with varying shape functions that take the smooth and non-smooth regions of the solution into account. As a result, the numerical effort is reduced significantly in comparison to the standard FVM.}
 }
 
 @article{Pfeil2024,
   title = {Efficient simulation of hydrodynamic bearings using the {{SBFEM}} with eigenvalue problem derivatives},
   author = {Pfeil, Simon and Gravenkamp, Hauke and Woschke, Elmar},
-  date = {2024},
+  date = {2025},
   journaltitle = {Computational Mechanics},
   shortjournal = {Comput Mech},
+  volume = {75},
+  pages = {1637--1653},
   issn = {0178-7675, 1432-0924},
   doi = {10.1007/s00466-024-02582-1},
-  url = {https://link.springer.com/10.1007/s00466-024-02582-1}
+  url = {https://link.springer.com/10.1007/s00466-024-02582-1},
+  abstract = {This work presents a semi-analytical solution of the Reynolds equation under Gümbel conditions for hydrodynamic bearings in rotordynamic simulations. The algorithm is based on the SBFEM (scaled boundary finite element method) in combination with eigenvalue problem derivatives. The pressure field is discretized by standard finite elements along the circumferential coordinate, while an exact analytical formulation is used in the axial direction. This transforms the partial differential equation into a system of ordinary differential equations and leads to an eigenvalue problem. The computation of the continuously changing eigenvalues and eigenvectors is achieved by accurate Taylor approximations so that the repeated call of a numerically expensive eigensolver can be avoided. The algorithm is incorporated into a time integration scheme for the dynamic analysis of a simple system, consisting of a rotor with two degrees of freedom in a hydrodynamic bearing. Thereby, the method is verified, and its numerical efficiency is demonstrated. For a bearing with a slenderness ratio (length-to-diameter ratio) of 1, the computational time is reduced to 8.8\% compared to a standard FVM (finite volume method) solution.}
 }
 
-@article{Plestenjak2024,
-  title = {A {{Sylvester}} equation approach for the computation of zero-group-velocity points in waveguides (submitted)},
+@article{Plestenjak2025,
+  title = {A {{Sylvester}} equation approach for the computation of zero-group-velocity points in waveguides (in press)},
   author = {Plestenjak, Bor and Kiefer, Daniel A. and Gravenkamp, Hauke},
-  date = {2024-11-14},
+  date = {2025},
   journaltitle = {Computational Mechanics},
   shortjournal = {Comput. Mech.},
-  eprint = {2411.09584},
-  eprinttype = {arXiv},
-  eprintclass = {physics},
-  url = {http://arxiv.org/abs/2411.09584}
+  doi = {10.48550/arXiv.2411.09584},
+  url = {http://arxiv.org/abs/2411.09584},
+  abstract = {Eigenvalues of parameter-dependent quadratic eigenvalue problems form eigencurves. The critical points on these curves, where the derivative vanishes, are of practical interest. A particular example is found in the dispersion curves of elastic waveguides, where such points are called zero-group-velocity (ZGV) points. Recently, it was revealed that the problem of computing ZGV points can be modeled as a multiparameter eigenvalue problem (MEP), and several numerical methods were devised. Due to their complexity, these methods are feasible only for problems involving small matrices. In this paper, we improve the efficiency of these methods by exploiting the link to the Sylvester equation. This approach enables the computation of ZGV points for problems with much larger matrices, such as multi-layered plates and three-dimensional structures of complex cross-sections.}
 }
 
 @inproceedings{Prager2014,
@@ -1232,7 +1370,8 @@
   volume = {79},
   number = {5},
   pages = {251--261},
-  doi = {10.1524/teme.2012.0168}
+  doi = {10.1524/teme.2012.0168},
+  abstract = {Guided waves are widely used for non-destructive testing using ultrasound. Recently, the method has become increasingly important for integrity tests of spatially extended components with limited accessibility. This article discusses the basic physics of the sound propagation of guided waves. Their understanding forms the basis for the successful development of adapted inspection systems. Examples for simulating the wave propagation using different methods are presented. Current approaches for the inspection of plate-like structures and pipelines are described with focus on sensor technology and the specific requirement on the test hardware.}
 }
 
 @inproceedings{Saputra2013,
@@ -1254,7 +1393,8 @@
   shortjournal = {Comput. Struct.},
   volume = {237},
   pages = {106263},
-  doi = {10.1016/j.compstruc.2020.106263}
+  doi = {10.1016/j.compstruc.2020.106263},
+  abstract = {The determination of effective material properties of composites based on a three-dimensional representative volume element (RVE) is considered in this paper. The material variation in the RVE is defined based on the colour intensity in each voxel of an image which can be obtained from imaging techniques such as X-ray computed tomography (XCT) scans. The RVE is converted into a numerical model using hierarchical meshing based on octree decompositions. Each octree cell in the mesh is modelled as a scaled boundary polyhedral element, which only requires a surface discretisation on the polyhedron’s boundary. The problem of hanging (incompatible) nodes – typically encountered when using the finite element method in conjunction with octree meshes – is circumvented by employing special transition elements. Two different types of boundary conditions (BCs) are used to obtain the homogenised material properties of various samples. The numerical results confirm that periodic BCs provide a better agreement with previously published results. The reason is attributed to the fact that the model based on the periodic BCs is not over-constrained as is the case for uniform displacement BCs.}
 }
 
 @inproceedings{Subhani2013,
@@ -1277,7 +1417,8 @@
   publisher = {Elsevier B.V.},
   issn = {0165-2125},
   doi = {10.1016/j.wavemoti.2018.07.002},
-  url = {https://doi.org/10.1016/j.wavemoti.2018.07.002}
+  url = {https://doi.org/10.1016/j.wavemoti.2018.07.002},
+  abstract = {We present a systematic investigation of several discretization approaches for transient elastodynamic wave propagation problems. This comparison includes a Finite Difference, a Finite Volume, a Finite Element, a Spectral Element and the Scaled Boundary Finite Element Method. Numerical examples are given for simple geometries with normalized parameters, for heterogeneous materials as well as for structures with arbitrarily shaped material interfaces. General conclusions regarding the accuracy of the methods are presented. Based on the essential numerical examples an expansion of the results to a wide range of problems and thus to numerous fields of application is possible.}
 }
 
 @inproceedings{Wallner2017,
@@ -1329,7 +1470,8 @@
   publisher = {Elsevier B.V.},
   issn = {0045-7825},
   doi = {10.1016/j.cma.2019.112807},
-  url = {https://doi.org/10.1016/j.cma.2019.112807}
+  url = {https://doi.org/10.1016/j.cma.2019.112807},
+  abstract = {A new approach to model shell structures is proposed. It is based on the scaled boundary finite element method in three dimensions. Thus, the solution is sought analytically in the through-thickness direction while the surface of the domain is discretized in a finite element sense. Since no kinematic assumptions are made, the proposed method can be applied to thick spherical shells and thin shells. Very good agreement with reference solutions is demonstrated for classical benchmark problems of shell analyses. No membrane locking induced by mesh distortion is observed. The potential of the proposed method is particularly evident when p-refinement is employed. Furthermore, the applicability of the proposed method to shells with non-spherical geometry is discussed in detail.}
 }
 
 @article{Wallner2021,
@@ -1365,5 +1507,14 @@
   publisher = {Elsevier B.V.},
   issn = {00457825},
   doi = {10.1016/j.cma.2021.113811},
-  url = {https://doi.org/10.1016/j.cma.2021.113811}
+  url = {https://doi.org/10.1016/j.cma.2021.113811},
+  abstract = {Typical areas of application of explicit dynamics are impact, crash test, and most importantly, wave propagation simulations. Due to the numerically highly demanding nature of these problems, efficient automatic mesh generators and transient solvers are required. To this end, a parallel explicit solver exploiting the advantages of balanced octree meshes is introduced. To avoid the hanging nodes problem encountered in standard finite element analysis (FEA), the scaled boundary finite element method (SBFEM) is deployed as a spatial discretization scheme. Consequently, arbitrarily shaped star-convex polyhedral elements are straightforwardly generated. Considering the scaling and transformation of octree cells, the stiffness and mass matrices of a limited number of unique cell patterns are pre-computed. A recently proposed mass lumping technique is extended to 3D yielding a well-conditioned diagonal mass matrix. This enables us to leverage the advantages of explicit time integrator, i.e., it is possible to efficiently compute the nodal displacements without the need for solving a system of linear equations. We implement the proposed scheme together with a central difference method (CDM) in a distributed computing environment. The performance of our parallel explicit solver is evaluated by means of several numerical benchmark examples, including complex geometries and various practical applications. A significant speedup is observed for these examples with up to one billion of degrees of freedom and running on up to 16,384 computing cores.}
+}
+
+@article{zotero-item-8956,
+  title = {{{3D}} phase-field modeling of brittle fracture using a matrix-free octree approach based on the scaled boundary finite element method (submitted)},
+  author = {Assaf, Rama and Gravenkamp, Hauke and Birk, Carolin},
+  date = {2025},
+  journaltitle = {Computer Methods in Applied Mechanics and Engineering},
+  shortjournal = {Comput. Methods Appl. Mech. Eng.}
 }
