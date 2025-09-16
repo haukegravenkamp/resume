@@ -41,6 +41,14 @@
   abstract = {In this paper, an adaptive phase-field approach is proposed for three-dimensional fracture modeling in brittle materials. The scaled boundary finite element method (SBFEM) is used to solve the phase-field and elasticity equations in a staggered scheme. This is motivated by the ability of the SBFEM to handle polyhedral elements with hanging nodes straightforwardly. Such elements occur in octree meshes, which facilitate rapid transitions in element size and lend themselves to adaptive refinement. The SBFEM also provides an energy-based error indicator, which follows directly from the semi-analytical solution approach and does not require stress recovery. The error indicator is used to ensure the solution accuracy for both fields and combined with a criterion based on phase-field evolution. The computational cost associated with 3D fracture modeling is further reduced by exploiting the geometric similarity of cells occurring in balanced octree meshes. To validate the proposed method, several classical benchmark problems are solved, resulting in efficient and robust solutions compared to the literature.}
 }
 
+@article{Assaf2025,
+  title = {{{3D}} phase-field modeling of brittle fracture using a matrix-free octree approach based on the scaled boundary finite element method (submitted)},
+  author = {Assaf, Rama and Gravenkamp, Hauke and Birk, Carolin},
+  date = {2025},
+  journaltitle = {Computer Methods in Applied Mechanics and Engineering},
+  shortjournal = {Comput. Methods Appl. Mech. Eng.}
+}
+
 @article{Bause2014,
   title = {Transient modeling of ultrasonic guided waves in circular viscoelastic waveguides for inverse material characterization},
   author = {Bause, Fabian and Gravenkamp, Hauke and Rautenberg, Jens and Henning, Bernd},
@@ -110,8 +118,7 @@
   title = {Numerische Strukturmodellierung mit Polygon-Elementen},
   booktitle = {Baustatik-Baupraxis 15},
   author = {Birk, Carolin and Assaf, Rama and Iqbal, Muhammad Danish and Gravenkamp, Hauke},
-  date = {2024},
-  location = {Hamburg}
+  date = {2024}
 }
 
 @article{Birk2024a,
@@ -166,12 +173,14 @@
 }
 
 @article{Codina2025,
-  title = {A posteriori error estimates for the finite element approximation  of the convection–diffusion–reaction equation  based on the variational multiscale concept (preprint)},
+  title = {A posteriori error estimates for the finite element approximation  of the convection–diffusion–reaction equation  based on the variational multiscale concept},
   author = {Codina, Ramon and Gravenkamp, Hauke and Khan, Sheraz Ahmed},
   date = {2025},
   journaltitle = {Applied Numerical Mathematics},
   shortjournal = {Appl. Numer. Math.},
-  doi = {10.48550/arXiv.2505.02531},
+  volume = {218},
+  pages = {238--260},
+  doi = {10.1016/j.apnum.2025.08.003},
   abstract = {In this study, we employ the variational multiscale (VMS) concept to develop a posteriori error estimates for the stationary convection-diffusion-reaction equation. The variational multiscale method is based on splitting the continuous part of the problem into a resolved scale (coarse scale) and an unresolved scale (fine scale). The unresolved scale (also known as the sub-grid scale) is modeled by choosing it proportional to the component of the residual orthogonal to the finite element space, leading to the orthogonal sub-grid scale (OSGS) method. The idea is then to use the modeled sub-grid scale as an error estimator, considering its contribution in the element interiors and on the edges. We present the results of the a priori analysis and two different strategies for the a posteriori error analysis for the OSGS method. Our proposal is to use a scaled norm of the sub-grid scales as an a posteriori error estimate in the so-called stabilized norm of the problem. This norm has control over the convective term, which is necessary for convection-dominated problems. Numerical examples show the reliable performance of the proposed error estimator compared to other error estimators belonging to the variational multiscale family.}
 }
 
@@ -352,9 +361,9 @@
   journaltitle = {Journal of Sound and Vibration},
   shortjournal = {J. Sound Vib.},
   volume = {331},
+  number = {11},
   pages = {2543--2557},
   publisher = {Elsevier},
-  issn = {0022460X},
   doi = {10.1016/j.jsv.2012.01.029},
   abstract = {In this paper, a method is presented for the numerical computation of dispersion properties and mode shapes of guided waves in plate structures. The formulation is based on the Scaled Boundary Finite Element Method. The through-thickness direction of the plate is discretized in the finite element sense, while the direction of propagation is described analytically. This leads to a standard eigenvalue problem for the calculation of wave numbers. The proposed method is not limited to homogeneous plates. Multilayered composites as well as structures with continuously varying material parameters in the direction of thickness can be modeled without essential changes in the formulation. Higher-order elements have been employed for the finite element discretization, leading to excellent convergence for complex structures. It is shown by numerical examples that this method provides highly accurate results with a small number of nodes while avoiding numerical problems and instabilities.}
 }
@@ -938,7 +947,7 @@
 }
 
 @software{Gravenkamp2024a,
-  title = {{{SAMWISE}} - {{Semi-Analytical Modeling}} of {{Waves}} in {{Structural Elements}}},
+  title = {{{SAMWISE}}: {{Semi-Analytical Modeling}} of {{Waves}} in {{Structural Elements}}},
   author = {Gravenkamp, Hauke},
   date = {2024},
   doi = {10.5281/zenodo.13830671},
@@ -966,13 +975,21 @@
 }
 
 @article{Gravenkamp2025a,
-  title = {Computing leaky waves in semi-analytical waveguide models by exponential residual relaxation (submitted)},
+  title = {Computing leaky waves in semi-analytical waveguide models by exponential residual relaxation},
   author = {Gravenkamp, Hauke and Plestenjak, Bor and Kiefer, Daniel A},
   date = {2025},
-  journaltitle = {International Journal for Numerical Methods in Engineering},
-  shortjournal = {Int. J. Numer. Methods Eng.},
+  journaltitle = {ArXiv e-prints},
   doi = {10.48550/arXiv.2505.04735},
   abstract = {Semi-analytical methods for the modeling of guided waves in structures of constant cross-section lead to frequency-dependent polynomial eigenvalue problems for the wavenumbers and mode shapes. Solving these eigenvalue problems for a range of frequencies results in continuous eigencurves that are of relevance in practical applications of ultrasonic measurement systems. Recent research has shown that eigencurves of parameter-dependent eigenvalue problems can alternatively be computed as solutions of a system of ordinary differential equations, which are obtained by postulating an exponentially decaying residual of a modal solution. This general concept for solving parameter-dependent matrix equations is, in this context, known as Zeroing Neural Networks or Zhang Neural Networks (ZNN). We exploit this idea to develop an efficient method for computing the dispersion curves of plate structures coupled to unbounded solid or fluid media. In these scenarios, the alternative formulation is particularly useful since the boundary conditions give rise to nonlinear terms that severely hinder the application of traditional solvers.}
+}
+
+@inproceedings{Gravenkamp2025b,
+  title = {Methods for computing quasi-guided waves in plate structures coupled to unbounded media},
+  booktitle = {International {{Congress}} on {{Ultrasonics}}},
+  author = {Gravenkamp, Hauke and Plestenjak, Bor and Kiefer, Daniel A},
+  date = {2025},
+  location = {Paderborn},
+  abstract = {Using semi-analytical methods for modeling waves in layered structures, the thickness direction is discretized straightforwardly by finite elements. However, the coupling to adjacent acoustic or elastic half-spaces leads to a nonlinear eigenvalue problem (NLEP) for the wavenumbers and mode shapes. We demonstrate how this NLEP can be solved in two very different ways, either by recasting it as a multiparameter eigenvalue problem or by the concept of exponential residual relaxation in conjunction with standard Runge-Kutta solvers.}
 }
 
 @unpublished{Gravenkampa,
@@ -980,6 +997,15 @@
   author = {Gravenkamp, Hauke},
   date = {2021},
   venue = {14th World Congress on Computational Mechanics, Paris, France}
+}
+
+@article{Gravenkampb,
+  title = {On the direct numerical computation of {{Hopf}} bifurcations to assess the dynamic stability of fluid-conveying cantilevered pipes (submitted)},
+  author = {Gravenkamp, Hauke and Plestenjak, Bor},
+  date = {2025},
+  journaltitle = {Computers and Structures},
+  shortjournal = {Comput. Struct.},
+  abstract = {In the structural analysis of fluid-conveying pipes, dynamic instabilities can occur at certain values of the flow velocity, depending on the geometry as well as the material parameters of the pipe and the interior fluid. These critical points fall into the broader category of Hopf bifurcations. Typical numerical models of this problem employ a one-dimensional weighted residual method, leading to a velocity-dependent eigenvalue problem. The solutions form eigencurves, and the critical points are characterized by eigenvalues with vanishing real parts. In this paper, we show that critical points can be computed directly as solutions to a single three-parameter eigenvalue problem. In addition, we employ a recently developed method for computing individual eigencurves, based on the concept of exponential residual relaxation. For the discretization of the weak form, we use a finite element method with a particular version of C1-continuous high-order spectral elements, suited for fourth-order differential equations, and we discuss the differences compared to the more commonly used weighted residual method based on the basis functions of a linear Euler-Bernoulli beam. Four numerical examples demonstrate the effectiveness of the implemented algorithms. For verification, we provide a detailed derivation of analytical solutions for special cases.}
 }
 
 @article{Hohne2014a,
@@ -998,7 +1024,7 @@
 @inproceedings{Iqbal2019,
   title = {Scaled boundary finite element modelling of thermally induced crack propagation},
   booktitle = {Proceedings in {{Applied Mathematics}} and {{Mechanics}}},
-  author = {Danish Iqbal, Muhammad and Birk, Carolin and Gravenkamp, Hauke and Iqbal, Muhammad Danish and Birk, Carolin and Gravenkamp, Hauke},
+  author = {Danish Iqbal, Muhammad and Birk, Carolin and Gravenkamp, Hauke},
   date = {2019},
   pages = {1--2},
   doi = {10.1002/pamm.201900109}
@@ -1082,7 +1108,7 @@
 }
 
 @article{Itner2025,
-  title = {A modified {{Levenberg-Marquardt}} method for estimating the elastic material parameters of polymer waveguides using residuals between autocorrelated frequency responses (submitted)},
+  title = {A modified {{Levenberg-Marquardt}} method for estimating the elastic material parameters of polymer waveguides using residuals between autocorrelated frequency responses (preprint)},
   author = {Itner, Dominik and Dreiling, Dmitrij and Gravenkamp, Hauke and Henning, Bernd and Birk, Carolin},
   date = {2025},
   journaltitle = {Mechanical Systems and Signal Processing},
@@ -1127,7 +1153,7 @@
 }
 
 @article{Khan2025,
-  title = {A variational multiscale approach to goal-oriented error estimation in finite element analysis of  convection-diffusion-reaction equation problems (submitted)},
+  title = {A variational multiscale approach to goal-oriented error estimation in finite element analysis of  convection-diffusion-reaction equation problems (preprint)},
   author = {Khan, Sheraz Ahmed and Codina, Ramon and Gravenkamp, Hauke},
   date = {2025},
   journaltitle = {Applied Mathematical Modelling},
@@ -1343,12 +1369,12 @@
 }
 
 @article{Plestenjak2025,
-  title = {A {{Sylvester}} equation approach for the computation of zero-group-velocity points in waveguides (in press)},
+  title = {A {{Sylvester}} equation approach for the computation of zero-group-velocity points in waveguides},
   author = {Plestenjak, Bor and Kiefer, Daniel A. and Gravenkamp, Hauke},
   date = {2025},
   journaltitle = {Computational Mechanics},
   shortjournal = {Comput. Mech.},
-  doi = {10.48550/arXiv.2411.09584},
+  doi = {10.1007/s00466-025-02656-8},
   url = {http://arxiv.org/abs/2411.09584},
   abstract = {Eigenvalues of parameter-dependent quadratic eigenvalue problems form eigencurves. The critical points on these curves, where the derivative vanishes, are of practical interest. A particular example is found in the dispersion curves of elastic waveguides, where such points are called zero-group-velocity (ZGV) points. Recently, it was revealed that the problem of computing ZGV points can be modeled as a multiparameter eigenvalue problem (MEP), and several numerical methods were devised. Due to their complexity, these methods are feasible only for problems involving small matrices. In this paper, we improve the efficiency of these methods by exploiting the link to the Sylvester equation. This approach enables the computation of ZGV points for problems with much larger matrices, such as multi-layered plates and three-dimensional structures of complex cross-sections.}
 }
@@ -1511,9 +1537,9 @@
   abstract = {Typical areas of application of explicit dynamics are impact, crash test, and most importantly, wave propagation simulations. Due to the numerically highly demanding nature of these problems, efficient automatic mesh generators and transient solvers are required. To this end, a parallel explicit solver exploiting the advantages of balanced octree meshes is introduced. To avoid the hanging nodes problem encountered in standard finite element analysis (FEA), the scaled boundary finite element method (SBFEM) is deployed as a spatial discretization scheme. Consequently, arbitrarily shaped star-convex polyhedral elements are straightforwardly generated. Considering the scaling and transformation of octree cells, the stiffness and mass matrices of a limited number of unique cell patterns are pre-computed. A recently proposed mass lumping technique is extended to 3D yielding a well-conditioned diagonal mass matrix. This enables us to leverage the advantages of explicit time integrator, i.e., it is possible to efficiently compute the nodal displacements without the need for solving a system of linear equations. We implement the proposed scheme together with a central difference method (CDM) in a distributed computing environment. The performance of our parallel explicit solver is evaluated by means of several numerical benchmark examples, including complex geometries and various practical applications. A significant speedup is observed for these examples with up to one billion of degrees of freedom and running on up to 16,384 computing cores.}
 }
 
-@article{zotero-item-8956,
-  title = {{{3D}} phase-field modeling of brittle fracture using a matrix-free octree approach based on the scaled boundary finite element method (submitted)},
-  author = {Assaf, Rama and Gravenkamp, Hauke and Birk, Carolin},
+@article{Zhang2025,
+  title = {A massively parallel framework for high-performance explicit dynamics: leveraging polyhedral element formulations and balanced octree meshes (submitted)},
+  author = {Zhang, Junqi and Provatidis, C.G. and Natarajan, Sundararajan and Gravenkamp, Hauke and Liu, Pengcheng and Eisenträger, Sascha},
   date = {2025},
   journaltitle = {Computer Methods in Applied Mechanics and Engineering},
   shortjournal = {Comput. Methods Appl. Mech. Eng.}
