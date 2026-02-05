@@ -41,10 +41,10 @@
   abstract = {In this paper, an adaptive phase-field approach is proposed for three-dimensional fracture modeling in brittle materials. The scaled boundary finite element method (SBFEM) is used to solve the phase-field and elasticity equations in a staggered scheme. This is motivated by the ability of the SBFEM to handle polyhedral elements with hanging nodes straightforwardly. Such elements occur in octree meshes, which facilitate rapid transitions in element size and lend themselves to adaptive refinement. The SBFEM also provides an energy-based error indicator, which follows directly from the semi-analytical solution approach and does not require stress recovery. The error indicator is used to ensure the solution accuracy for both fields and combined with a criterion based on phase-field evolution. The computational cost associated with 3D fracture modeling is further reduced by exploiting the geometric similarity of cells occurring in balanced octree meshes. To validate the proposed method, several classical benchmark problems are solved, resulting in efficient and robust solutions compared to the literature.}
 }
 
-@article{Assaf2025,
+@article{Assaf2026,
   title = {{{3D}} phase-field modeling of brittle fracture using a matrix-free octree approach based on the scaled boundary finite element method (submitted)},
   author = {Assaf, Rama and Gravenkamp, Hauke and Birk, Carolin},
-  date = {2025},
+  date = {2026},
   journaltitle = {Computer Methods in Applied Mechanics and Engineering},
   shortjournal = {Comput. Methods Appl. Mech. Eng.}
 }
@@ -504,8 +504,6 @@
   date = {2014},
   journaltitle = {Ultrasonics},
   volume = {54},
-  eprint = {24594445},
-  eprinttype = {pubmed},
   pages = {1373--1385},
   publisher = {Elsevier B.V.},
   issn = {1874-9968},
@@ -985,20 +983,12 @@
   abstract = {We present a semi-analytical approach to compute quasi-guided elastic wave modes in horizontally layered structures radiating into unbounded fluid or solid media. This problem is of relevance, e.g., for the simulation of guided ultrasound in embedded plate structures or seismic waves in soil layers over an elastic half-space. We employ a semi-analytical formulation to describe the layers, thus discretizing the thickness direction by means of finite elements. For a free layer, this technique leads to a well-known quadratic eigenvalue problem for the mode shapes and corresponding horizontal wavenumbers. Incorporating the coupling conditions to account for the adjacent half-spaces gives rise to additional terms that are nonlinear in the wavenumber. We show that the resulting nonlinear eigenvalue problem can be cast in the form of a multiparameter eigenvalue problem whose solutions represent the wave numbers in the plate and in the half-spaces. The multiparameter eigenvalue problem is solved numerically using recently developed algorithms. Matlab implementations of the proposed methods are publicly available.}
 }
 
-@article{Gravenkamp2025a,
-  title = {Computing leaky waves in semi-analytical waveguide models by exponential residual relaxation},
-  author = {Gravenkamp, Hauke and Plestenjak, Bor and Kiefer, Daniel A},
-  date = {2025},
-  journaltitle = {ArXiv e-prints},
-  doi = {10.48550/arXiv.2505.04735},
-  abstract = {Semi-analytical methods for the modeling of guided waves in structures of constant cross-section lead to frequency-dependent polynomial eigenvalue problems for the wavenumbers and mode shapes. Solving these eigenvalue problems for a range of frequencies results in continuous eigencurves that are of relevance in practical applications of ultrasonic measurement systems. Recent research has shown that eigencurves of parameter-dependent eigenvalue problems can alternatively be computed as solutions of a system of ordinary differential equations, which are obtained by postulating an exponentially decaying residual of a modal solution. This general concept for solving parameter-dependent matrix equations is, in this context, known as Zeroing Neural Networks or Zhang Neural Networks (ZNN). We exploit this idea to develop an efficient method for computing the dispersion curves of plate structures coupled to unbounded solid or fluid media. In these scenarios, the alternative formulation is particularly useful since the boundary conditions give rise to nonlinear terms that severely hinder the application of traditional solvers.}
-}
-
 @inproceedings{Gravenkamp2025b,
   title = {Methods for computing quasi-guided waves in plate structures coupled to unbounded media},
   booktitle = {International {{Congress}} on {{Ultrasonics}}},
   author = {Gravenkamp, Hauke and Plestenjak, Bor and Kiefer, Daniel A},
   date = {2025},
+  doi = {10.5162/Ultrasonic2025/A12-b1},
   abstract = {Using semi-analytical methods for modeling waves in layered structures, the thickness direction is discretized straightforwardly by finite elements. However, the coupling to adjacent acoustic or elastic half-spaces leads to a nonlinear eigenvalue problem (NLEP) for the wavenumbers and mode shapes. We demonstrate how this NLEP can be solved in two very different ways, either by recasting it as a multiparameter eigenvalue problem or by the concept of exponential residual relaxation in conjunction with standard Runge-Kutta solvers.}
 }
 
@@ -1009,14 +999,7 @@
   venue = {International Congress on Ultrasonics, Paderborn}
 }
 
-@unpublished{Gravenkampa,
-  title = {Wave propagation simulation on hierarchical meshes using the {{SBFEM}} and explicit time integration},
-  author = {Gravenkamp, Hauke},
-  date = {2021},
-  venue = {14th World Congress on Computational Mechanics, Paris}
-}
-
-@article{Gravenkampb,
+@article{Gravenkamp2026,
   title = {On the direct numerical computation of {{Hopf}} bifurcations to assess the dynamic stability of fluid-conveying cantilevered pipes},
   author = {Gravenkamp, Hauke and Plestenjak, Bor},
   date = {2026},
@@ -1025,6 +1008,25 @@
   volume = {320},
   pages = {108039},
   abstract = {In the structural analysis of fluid-conveying pipes, dynamic instabilities can occur at certain values of the flow velocity, depending on the geometry as well as the material parameters of the pipe and the interior fluid. These critical points fall into the broader category of Hopf bifurcations. Typical numerical models of this problem employ a one-dimensional weighted residual method, leading to a velocity-dependent eigenvalue problem. The solutions form eigencurves, and the critical points are characterized by eigenvalues with vanishing real parts. In this paper, we show that critical points can be computed directly as solutions to a single three-parameter eigenvalue problem. In addition, we employ a recently developed method for computing individual eigencurves, based on the concept of exponential residual relaxation. For the discretization of the weak form, we use a finite element method with a particular version of C1-continuous high-order spectral elements, suited for fourth-order differential equations, and we discuss the differences compared to the more commonly used weighted residual method based on the basis functions of a linear Euler-Bernoulli beam. Four numerical examples demonstrate the effectiveness of the implemented algorithms. For verification, we provide a detailed derivation of analytical solutions for special cases.}
+}
+
+@article{Gravenkamp2026a,
+  title = {Computing leaky waves in semi-analytical waveguide models by exponential residual relaxation},
+  author = {Gravenkamp, Hauke and Plestenjak, Bor and Kiefer, Daniel A},
+  date = {2026},
+  journaltitle = {Computer Methods in Applied Mechanics and Engineering},
+  shortjournal = {Comput. Methods Appl. Mech. Eng.},
+  volume = {452},
+  pages = {118763},
+  doi = {10.1016/j.cma.2026.118763},
+  abstract = {Semi-analytical methods for the modeling of guided waves in structures of constant cross-section lead to frequency-dependent polynomial eigenvalue problems for the wavenumbers and mode shapes. Solving these eigenvalue problems for a range of frequencies results in continuous eigencurves that are of relevance in practical applications of ultrasonic measurement systems. Recent research has shown that eigencurves of parameter-dependent eigenvalue problems can alternatively be computed as solutions of a system of ordinary differential equations, which are obtained by postulating an exponentially decaying residual of a modal solution. This general concept for solving parameter-dependent matrix equations is, in this context, known as Zeroing Neural Networks or Zhang Neural Networks (ZNN). We exploit this idea to develop an efficient method for computing the dispersion curves of plate structures coupled to unbounded solid or fluid media. In these scenarios, the alternative formulation is particularly useful since the boundary conditions give rise to nonlinear terms that severely hinder the application of traditional solvers.}
+}
+
+@unpublished{Gravenkampa,
+  title = {Wave propagation simulation on hierarchical meshes using the {{SBFEM}} and explicit time integration},
+  author = {Gravenkamp, Hauke},
+  date = {2021},
+  venue = {14th World Congress on Computational Mechanics, Paris}
 }
 
 @article{Hohne2014a,
@@ -1127,17 +1129,28 @@
 }
 
 @article{Itner2025,
-  title = {A modified {{Levenberg-Marquardt}} method for estimating the elastic material parameters of polymer waveguides using residuals between autocorrelated frequency responses (preprint)},
+  title = {A modified {{Levenberg-Marquardt}} method for estimating the elastic material parameters of polymer waveguides using residuals between autocorrelated frequency responses},
   author = {Itner, Dominik and Dreiling, Dmitrij and Gravenkamp, Hauke and Henning, Bernd and Birk, Carolin},
-  date = {2025},
+  date = {2026},
   journaltitle = {Mechanical Systems and Signal Processing},
   shortjournal = {Mech. Syst. Signal Process.},
+  volume = {247},
   eprint = {2507.01706},
   eprinttype = {arXiv},
   eprintclass = {cs},
-  doi = {10.48550/arXiv.2507.01706},
+  pages = {113904},
+  doi = {10.1016/j.ymssp.2026.113904},
   url = {http://arxiv.org/abs/2507.01706},
   abstract = {In this contribution, we address the estimation of the frequency-dependent elastic parameters of polymers in the ultrasound range, which is formulated as an inverse problem. This inverse problem is implemented as a nonlinear regression-type optimization problem, in which the simulation signals are fitted to the measurement signals. These signals consist of displacement responses in waveguides, focusing on hollow cylindrical geometries to enhance the simulation efficiency. To accelerate the optimization and reduce the number of model evaluations and wait times, we propose two novel methods. First, we introduce an adaptation of the Levenberg-Marquardt method derived from a geometrical interpretation of the least-squares optimization problem. Second, we introduce an improved objective function based on the autocorrelated envelopes of the measurement and simulation signals. Given that this study primarily relies on simulation data to quantify optimization convergence, we aggregate the expected ranges of realistic material parameters and derive their distributions to ensure the reproducibility of optimizations with proper measurements. We demonstrate the effectiveness of our objective function modification and step adaptation for various materials with isotropic material symmetry by comparing them with a state-of-the-art optimization method. In all cases, our method reduces the total number of model evaluations, thereby shortening the time to identify the material parameters.}
+}
+
+@article{Itner2026,
+  title = {Almost one-step minimization of nonlinear least squares for parameter estimation via learned rectification of model manifolds (submitted)},
+  author = {Itner, Dominik and Küch, Manuel and Gravenkamp, Hauke and Birk, Carolin},
+  date = {2026},
+  journaltitle = {Journal of Global Optimization},
+  shortjournal = {J. Glob. Optim.},
+  abstract = {Inverse problems for parameter estimation frequently involve minimization of the sum of squared residuals between an experimental measurement and its corresponding parametrized simulation. The least-squares objective is geometrically related to the Euclidean metric in a high-dimensional ambient space. In contrast, the predictions of a differentiable forward model reside on a comparatively low-dimensional Riemannian manifold . This makes the Euclidean metric an inadequate measure of distance for parameter estimation. The twisted and entangled surface of the model manifold causes the inherent non-convexity in the nonlinear objective. Assuming that the model manifold exhibits sufficient regularity, it is possible to construct a nonlinear embedding that transforms the ambient space and induces a metric that accurately reflects the distances between parameter combinations. Neural networks provide a versatile approach for learning such embeddings. We propose an interpretable residual autoencoder that yields a differentiable transformation to achieve an approximate global rectification of the model manifold. Crucially, this transformation must preserve the orthogonality of the noisy references below a specified signal-to-noise ratio. This rectification enables the rapid minimization of the original objective via the encoded residuals, where the Gauss-Newton method achieves superlinear convergence. In theory, the perfect rectification of the model manifold and its tubular neighborhood reduces the inverse problem to linear least squares, which can be solved in closed form. We validate our approach using a synthetic model based on the sum of cosine series with two, three, and four parameters, demonstrating significant acceleration in convergence and improved global identification of parameter estimates.}
 }
 
 @inproceedings{Kadlag2025,
@@ -1171,13 +1184,15 @@
   abstract = {In this study, the Scaled Boundary Finite Element Method (SBFEM) was used to perform analyses and evaluate the objective function in shape optimization of devices relying on acoustic wave propagation. Similar to the Boundary Element Method (BEM), the SBFEM requires only the discretization of the boundary of the computational domain. However, unlike BEM, there is no need for a fundamental solution; thus, the SBFEM provides a flexibility similar to that of the Finite Element Method (FEM). The dimension reduction is achieved by representing the solution analytically inside the domain and numerically on the boundary. Consequently, the SBFEM provides a flexible platform for shape optimization and alleviates the re-meshing difficulties encountered in FEM. It was shown that domain boundaries can be optimized with a minimum number of design variables, while the existing accurate transparent boundary conditions effectively eliminate the artificial numerical reflections for a wide range of frequencies.}
 }
 
-@article{Khan2025,
-  title = {A variational multiscale approach to goal-oriented error estimation in finite element analysis of  convection-diffusion-reaction equation problems (preprint)},
+@article{Khan2026,
+  title = {A variational multiscale approach to goal-oriented error estimation in finite element analysis of  convection-diffusion-reaction problems},
   author = {Khan, Sheraz Ahmed and Codina, Ramon and Gravenkamp, Hauke},
-  date = {2025},
+  date = {2026},
   journaltitle = {Applied Mathematical Modelling},
   shortjournal = {Appl. Math. Model.},
-  doi = {10.48550/arXiv.2505.02946},
+  volume = {154},
+  pages = {116673},
+  doi = {10.1016/j.apm.2025.116673},
   abstract = {This paper presents a goal-oriented a posteriori error estimation framework for linear functionals in the stabilized finite element discretization of the stationary convection-diffusion-reaction (CDR) equation. The theoretical framework for error estimation is based on the variational multiscale (VMS) concept, where the solution is decomposed into resolved (finite element) and unresolved (sub-grid) scales. In this work, we propose an orthogonal sub-grid scale (OSGS) method for a goal-oriented error estimation in VMS discretizations. In the OSGS approach, the space of the sub-grid scales (SGSs) is orthogonal to the finite element space. The error is estimated in the quantity of interest, given by the linear functional Q(u) of the unknown u. If the SGS u′ is estimated, the error in the quantity of interest can be approximated by Q(u′). Our approach is compared with a duality-based a posteriori error estimation method, which requires the solution of an additional auxiliary problem. The results indicate that both methods yield similar error estimates, whereas the VMS-based explicit approach is computationally less expensive than the duality-based implicit approach. Numerical tests demonstrated the effectiveness of our proposed error estimation techniques in terms of the quantity of interest functionals.}
 }
 
@@ -1260,7 +1275,10 @@
   title = {Towards the efficient simulation of large-scale soil-structure interaction problems using the scaled boundary finite element method},
   booktitle = {Proceedings in {{Applied Mathematics}} and {{Mechanics}}},
   author = {Kuhn, Tobias and Gravenkamp, Hauke and Birk, Carolin},
-  date = {2025}
+  date = {2025},
+  volume = {25},
+  pages = {e70029},
+  doi = {10.1002/pamm.70029}
 }
 
 @article{Kuhn2024,
@@ -1554,10 +1572,10 @@
   abstract = {Typical areas of application of explicit dynamics are impact, crash test, and most importantly, wave propagation simulations. Due to the numerically highly demanding nature of these problems, efficient automatic mesh generators and transient solvers are required. To this end, a parallel explicit solver exploiting the advantages of balanced octree meshes is introduced. To avoid the hanging nodes problem encountered in standard finite element analysis (FEA), the scaled boundary finite element method (SBFEM) is deployed as a spatial discretization scheme. Consequently, arbitrarily shaped star-convex polyhedral elements are straightforwardly generated. Considering the scaling and transformation of octree cells, the stiffness and mass matrices of a limited number of unique cell patterns are pre-computed. A recently proposed mass lumping technique is extended to 3D yielding a well-conditioned diagonal mass matrix. This enables us to leverage the advantages of explicit time integrator, i.e., it is possible to efficiently compute the nodal displacements without the need for solving a system of linear equations. We implement the proposed scheme together with a central difference method (CDM) in a distributed computing environment. The performance of our parallel explicit solver is evaluated by means of several numerical benchmark examples, including complex geometries and various practical applications. A significant speedup is observed for these examples with up to one billion of degrees of freedom and running on up to 16,384 computing cores.}
 }
 
-@article{Zhang2025,
+@article{Zhang2026,
   title = {A massively parallel framework for high-performance explicit dynamics: leveraging polyhedral element formulations and balanced octree meshes (submitted)},
   author = {Zhang, Junqi and Provatidis, C.G. and Natarajan, Sundararajan and Gravenkamp, Hauke and Liu, Pengcheng and Eisenträger, Sascha},
-  date = {2025},
-  journaltitle = {Computer Methods in Applied Mechanics and Engineering},
-  shortjournal = {Comput. Methods Appl. Mech. Eng.}
+  date = {2026},
+  journaltitle = {Finite Elements in Analysis and Design},
+  shortjournal = {Finite Elem. Anal. Des.}
 }
